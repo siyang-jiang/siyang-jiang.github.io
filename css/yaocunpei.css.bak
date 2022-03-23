@@ -1,0 +1,33 @@
+body{
+     background-image:url("../img/1.jpg");
+     background-size:cover;
+	 background-attachment: fixed;
+	 color:#fff;
+    }
+
+h1{
+   text-align:center;
+   }
+
+div.a{
+       margin:0 300px;
+       
+	   }
+li{
+    list-style-type:none;
+    float:right;
+	display: inline;
+	margin:10px 10px 10px 10px;
+	font-size:22px;
+	}
+nav{
+	margin-top:-8px;
+	margin-right:300px;
+    }
+hr{
+	color:#fff;
+	margin-left:-5px;
+	margin-right:-5px;
+}
+p{
+	font-size:22px}
