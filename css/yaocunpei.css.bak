@@ -1,33 +1,208 @@
-body{
-     background-image:url("../img/1.jpg");
-     background-size:cover;
-	 background-attachment: fixed;
-	 color:#fff;
-    }
 
-h1{
-   text-align:center;
-   }
-
-div.a{
-       margin:0 300px;
-       
-	   }
-li{
-    list-style-type:none;
-    float:right;
-	display: inline;
-	margin:10px 10px 10px 10px;
-	font-size:22px;
-	}
 nav{
-	margin-top:-8px;
-	margin-right:300px;
-    }
-hr{
-	color:#fff;
-	margin-left:-5px;
-	margin-right:-5px;
+	text-align:	right;
+	top: 0;
+	right: 0;
+	box-sizing:border-box;
 }
-p{
-	font-size:22px}
+/* 导航 */
+div.nav{
+	 clear:both;
+	display:flex ;
+	flex-direction:row-reverse;
+	position: fixed;
+	border-bottom: 1px solid #e8e8e8;
+
+	width: 100%;
+	height: 40px;
+    margin: -23px -3px 0 ;
+	padding: 7px;
+	background-color: #ffffff;
+	z-index: 1;
+}	
+ul{
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-right: 350px;
+	
+}
+li{
+	margin: 10px 20px 10px 0;
+	display:inline-block;
+	font-size:1.1rem;
+
+}
+a.nav{
+	text-decoration:none;
+	color: black;
+}
+a.nav:hover{
+	color:#0fbeb3;;
+}
+
+/* 简介 */
+/* 头像 */
+img.portrait{
+	border-radius: 9999px;
+	width: 200px;
+	height: 200px;
+	padding: 0 5px;
+}
+/* 个人介绍and常用社交平台 */
+h1.name{
+	font-size: 2.5em;
+}
+h2.new{
+
+	margin :10px 0;
+}
+div.a{
+	display:block;
+	position:absolute;
+	top: 70px;
+	width: 55%;
+	right: 22.5%;
+	left: 22.5%;
+}
+div.b{
+	box-sizing:border-box;
+	display:inline;
+	position:absolute;
+	top: 30px;
+	padding-left: 50px;
+}
+a.b{
+	text-decoration:none;
+	color: #222222;
+	font-size: 1.1em;
+	
+}
+div.c{
+	text-align:justify;
+	text-align-last:left;
+	padding-left:20px;
+	padding-right:15px;
+	
+	display:block;
+	position:relative;
+	top: 250px;
+	width: 55%;
+	right: 22.5%;
+	left: 22.5%;
+	line-height:1.5;
+	font-size: 1.3em;
+}
+a.c{
+	text-decoration:none;
+	color: #108edc;
+}
+
+/* 新闻 */
+th{
+	font-weight:600;
+	padding-right:15px ;
+	width: 130px;
+	vertical-align:top;
+	
+}
+i{
+	margin: 8px;
+	padding-bottom: 10px;
+}
+
+/* Publications */
+div.a1
+{
+
+	width: 55%;
+	position: absolute;
+	left:25%;
+	margin-top: 10px;
+	clear:both
+	
+}
+div.a1 h2
+{
+	 text-align: right;
+}
+
+div.a1 h1
+{
+	margin: 40px 0 25px;
+}
+div.b1
+{
+	overflow:auto;
+	margin-bottom: 20px;
+}
+
+/* Publications的图片部分 */
+div.c1
+{
+	float: left;
+	margin: 0 20px 0 5px;
+	position: relative;
+	
+}
+
+div.c1 img
+{
+	height: 140px;
+	width: 185px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #585858;
+}
+abbr
+{
+	position: absolute;
+	top:3px;
+	left: -4px;
+	background-color: #0FBEB3;
+	color: #FFFFFF;
+	border-radius: 2px;
+	font-size:75%;
+	text-align: center;
+	width: 3.75rem;
+	height: 1.125rem
+	;
+	
+}
+/* Publications的文字 */
+div.d1
+{
+	width: 72%;
+	height: 170px;
+	margin-right: 0px;
+}
+h4
+{
+	margin: 10px 0;
+}
+div.d1 p
+{
+	margin: 5px 0;
+	line-height:1.4;
+}
+/* Publications的连接和按钮部分 */
+div.d1 a
+{
+	text-decoration: none;
+	color: #000000;
+	border: solid 1px;
+	border-radius: 5px;
+	padding: 3px 5px;
+	font-size: 0.8em;
+	height: ;
+}
+div.d1 a:hover
+{
+	color: #0c9a91;
+}
+/* 对about的 Publications模块矫正*/
+div.correct
+{
+	top: 1150px;
+	left:24.5%;
+}

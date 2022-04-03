@@ -56,7 +56,7 @@ h1.name{
 }
 h2.new{
 
-	margin-bottom: 17px;
+	margin :10px 0;
 }
 div.a{
 	display:block;
@@ -87,7 +87,7 @@ div.c{
 	
 	display:block;
 	position:relative;
-	top: 280px;
+	top: 250px;
 	width: 55%;
 	right: 22.5%;
 	left: 22.5%;
@@ -121,6 +121,7 @@ div.a1
 	left:25%;
 	margin-top: 10px;
 	clear:both
+	
 }
 div.a1 h2
 {
@@ -129,7 +130,7 @@ div.a1 h2
 
 div.a1 h1
 {
-	margin: 50px 0 30px;
+	margin: 40px 0 25px;
 }
 div.b1
 {
@@ -141,9 +142,9 @@ div.b1
 div.c1
 {
 	float: left;
-	margin-right: 20px;
-	margin-left:5px ;
+	margin: 0 20px 0 5px;
 	position: relative;
+	
 }
 
 div.c1 img
@@ -171,8 +172,11 @@ abbr
 /* Publications的文字 */
 div.d1
 {
-	width: 70%;
-	height: 160px;
+	width: 72.5%;
+	height: 170px;
+	margin-right: 0px;
+	text-align:justify;
+	text-align-last:left;
 }
 h4
 {
@@ -201,6 +205,6 @@ div.d1 a:hover
 /* 对about的 Publications模块矫正*/
 div.correct
 {
-	top: 1250px;
+	top: 1180px;
 	left:24.5%;
 }
