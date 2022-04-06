@@ -20,7 +20,7 @@ div.nav{
 	background-color: #ffffff;
 	z-index: 1;
 }	
-ul{
+div.nav ul{
 	float: right;
 	list-style-type: none;
 	margin: 0;
@@ -28,7 +28,7 @@ ul{
 	margin-right: 350px;
 	
 }
-li{
+div.nav li{
 	margin: 10px 20px 10px 0;
 	display:inline-block;
 	font-size:1.1rem;
@@ -87,7 +87,7 @@ div.c{
 	
 	display:block;
 	position:relative;
-	top: 250px;
+	top: 240px;
 	width: 55%;
 	right: 22.5%;
 	left: 22.5%;
@@ -202,9 +202,76 @@ div.d1 a:hover
 {
 	color: #0c9a91;
 }
+div.d1 ul{
+	float: right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	margin-right: 350px;
+	
+}
+div.d1 li{
+	margin: 10px 20px 10px 0;
+	display:inline-block;
+	font-size:1.1rem;
+
+}
 /* 对about的 Publications模块矫正*/
 div.correct
 {
 	top: 1180px;
 	left:24.5%;
+}
+/* Experience */
+div.corrects
+{
+	top: 2160px;
+	left:25%;
+	text-align: left;
+	padding-bottom: 50px;
+}
+div.corrects h3
+{
+
+	margin: 5px 0;
+	padding-left:30px ;
+
+}
+div.corrects p
+{
+
+	margin: 5px 0;
+	padding-left:30px ;
+
+}
+div.b2
+{
+	border: solid 1px black ;
+	border-radius: 10px;
+	box-shadow:  2px 2px 3px #585858;
+	margin: 35px 0;
+}
+
+/*  Honors and Awards*/
+div.modify
+{
+	top: 2760px;
+	left:25%;
+	padding-bottom:50px ;
+	text-align: left;
+}
+div.modify ul
+{
+	font-size: 1.2em;
+}
+div.modify li
+{
+	line-height: 1.5;
+}
+div.modify p
+{
+	text-align: center;
+	font-weight: 600;
+	border-top: #585858 solid 1px;
+	margin-top:30px ;
 }
