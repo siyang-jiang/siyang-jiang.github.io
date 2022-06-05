@@ -1,136 +1,125 @@
-
-nav{
-	text-align:	right;
-	top: 0;
-	right: 0;
-	box-sizing:border-box;
+body
+{
+	margin-top: 0;
+	color: #585858;
 }
-/* 导航 */
-div.nav{
-	 clear:both;
-	display:flex ;
-	flex-direction:row-reverse;
-	position: fixed;
-	border-bottom: 1px solid #e8e8e8;
-
-	width: 100%;
-	height: 40px;
-    margin: -23px -3px 0 ;
-	padding: 7px;
-	background-color: #ffffff;
-	z-index: 1;
-}	
-div.nav ul{
-	float: right;
-	list-style-type: none;
+/* header */
+header h2
+{
+	padding:20px 0 20px 120px;
 	margin: 0;
-	padding: 0;
-	margin-right: 350px;
-	
+	border-bottom: #bcbcbc solid 1px;
 }
-div.nav li{
-	margin: 10px 20px 10px 0;
-	display:inline-block;
-	font-size:1.1rem;
-
-}
-a.nav{
-	text-decoration:none;
-	color: black;
-}
-a.nav:hover{
-	color:#0fbeb3;;
+header a
+{
+	color: #7d7d7d;
 }
 
 /* 简介 */
 /* 头像 */
 img.portrait{
 	border-radius: 9999px;
-	width: 200px;
-	height: 200px;
-	padding: 0 5px;
+	width: 100%;
+	max-width: 160px;
+	height: 160px;
+	padding:0 5px;
+	margin: 0 auto;
 }
 /* 个人介绍and常用社交平台 */
-h1.name{
-	font-size: 2.5em;
-}
-h2.new{
-
+h1.new{
 	margin :10px 0;
 }
-div.a{
-	display:block;
-	position:absolute;
-	top: 70px;
-	width: 55%;
-	right: 22.5%;
-	left: 22.5%;
+div.sticky{
+    padding-top:5px;
+	width: 13%;
+	float: left;
+	padding-left: 7%;
+	margin-top: 20px;
+	position: sticky;
+	top: 10px;
 }
-div.b{
+div.about{
 	box-sizing:border-box;
-	display:inline;
-	position:absolute;
-	top: 30px;
-	padding-left: 50px;
+	display:inline-block;
+	padding-left: 10px;
+
 }
-a.b{
+a.sticky-a{
 	text-decoration:none;
 	color: #222222;
-	font-size: 1.1em;
-	
+	font-size: 0.7em;
 }
-div.c{
+div.introduce{
 	text-align:justify;
 	text-align-last:left;
 	padding-left:20px;
 	padding-right:15px;
-	
+	width: 60%;
 	display:block;
-	position:relative;
-	top: 240px;
-	width: 55%;
-	right: 22.5%;
-	left: 22.5%;
+	padding-top: 20px;
+	margin-left: 25%;
 	line-height:1.5;
-	font-size: 1.3em;
+	font-size: 1em;
 }
-a.c{
+a{
 	text-decoration:none;
-	color: #108edc;
+	color: #52adc8;
 }
 
 /* 新闻 */
+div.new
+{
+	width: 65%;
+	text-align:justify;
+	text-align-last:left;
+	padding-left:20px;
+	padding-right:15px;
+	display:block;
+	padding-top: 20px;
+	margin-left: 25%;
+	line-height:1.5;
+	font-size: 1em;
+}
+.table-ul
+{
+		display: inline-block;
+		margin: 0;
+}
 th{
 	font-weight:600;
 	padding-right:15px ;
 	width: 130px;
 	vertical-align:top;
-	
+}
+td
+{
+	padding-right: 40px;
 }
 i{
-	margin: 8px;
-	padding-bottom: 10px;
+	margin: 8px ;
+
 }
 
 /* Publications */
-div.a1
+div.Publications
 {
 
-	width: 55%;
-	position: absolute;
-	left:25%;
+	width: 65%;
+	font-size: 1em;
+	margin-left: 26.5%;
 	margin-top: 10px;
 	clear:both
 	
 }
-div.a1 h2
+div.Publications h2
 {
 	 text-align: right;
 }
 
-div.a1 h1
+div.Publications h1
 {
-	margin: 40px 0 25px;
+	padding: 33px 0 0;
+	margin: 0;
 }
 div.b1
 {
@@ -142,7 +131,7 @@ div.b1
 div.c1
 {
 	float: left;
-	margin: 0 20px 0 5px;
+	margin: 0 30px 0 5px;
 	position: relative;
 	
 }
@@ -153,20 +142,20 @@ div.c1 img
 	width: 185px;
 	border-radius: 10px;
 	box-shadow: 2px 2px 3px #585858;
+	margin-left: 20px;
 }
 abbr
 {
 	position: absolute;
-	top:3px;
-	left: -4px;
+	top:4px;
+	left: 10px;
 	background-color: #0FBEB3;
 	color: #FFFFFF;
 	border-radius: 2px;
 	font-size:75%;
 	text-align: center;
 	width: 3.75rem;
-	height: 1.125rem
-	;
+	height: 1.125rem;
 	
 }
 /* Publications的文字 */
@@ -208,67 +197,66 @@ div.d1 ul{
 	margin: 0;
 	padding: 0;
 	margin-right: 350px;
-	
 }
 div.d1 li{
 	margin: 10px 20px 10px 0;
 	display:inline-block;
 	font-size:1.1rem;
+}
 
-}
-/* 对about的 Publications模块矫正*/
-div.correct
-{
-	top: 1180px;
-	left:24.5%;
-}
 /* Experience */
-div.corrects
-{
-	top: 2160px;
-	left:25%;
+div.Experience
+{	
+	width: 60%;
+	left:22.5%;
 	text-align: left;
-	padding-bottom: 50px;
+	
+	font-size: 1em;
+	margin-left: 26.5%;
+	margin-top: 10px;
+	clear:both
 }
-div.corrects h3
+div.Experience h3
 {
 
 	margin: 5px 0;
 	padding-left:30px ;
 
 }
-div.corrects p
+div.Experience p
 {
 
 	margin: 5px 0;
 	padding-left:30px ;
 
 }
-div.b2
+div.Experience-content
 {
 	border: solid 1px black ;
 	border-radius: 10px;
 	box-shadow:  2px 2px 3px #585858;
-	margin: 35px 0;
+	margin: 35px 20px;
 }
 
 /*  Honors and Awards*/
-div.modify
+div.Honors
 {
-	top: 2760px;
-	left:25%;
-	padding-bottom:50px ;
+	width: 65%;
+	font-size: 1em;
+	margin-left: 26.5%;
+	margin-top: 10px;
+	clear:both;
 	text-align: left;
 }
-div.modify ul
+div.Honors ul
 {
 	font-size: 1.2em;
 }
-div.modify li
+div.Honors li
 {
 	line-height: 1.5;
 }
-div.modify p
+div.Honors p
 {
 	text-align: center;
 	font-weight: 600;
