@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="./css/yaocunpei.css" />
 		<link rel="icon"
 			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
 		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+		<script type="text/javascript">
+			function loadCSS() {
+				if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
+					document.write('<link href="./css/mobile.css" rel="stylesheet" type="text/css" media="screen" />');
 
+				} else {
+					document.write('<link rel="stylesheet" type="text/css" href="./css/pc.css" />');
+				}
+			}
+			loadCSS();
+		</script>
 	</head>
 	<title>Si-Yang Jiang</title>
 
@@ -17,20 +26,20 @@
 			<img src="img/1.png" class="portrait" />
 			<div class="about">
 				<h3 style="margin-left:5px ;">SiYang Jiang</h3>
-				<p style="margin-left:5px ;font-size: 0.8em;">Ph.D. student<br>at Chinese University of Hong Kong</p>
-				<div>
+				<p style="margin-left:5px ;">Ph.D. student<br> at Chinese University of Hong Kong</p>
+				<div class="contact">
 					<a href="mailto:syjiang@arbor.ee.ntu.edu.tw" class="sticky-a"><i class=" fa fa-envelope fa-2x"
-							aria-hidden="true" title="E-mail"></i>E-mail</a><br />
+							aria-hidden="true" title="E-mail"></i><span>E-mail</span></a><br />
 					<a href="https://www.facebook.com/siyang.jiang.376" class="sticky-a"><i
 							class="fa fa-facebook-square fa-2x" aria-hidden="true"
-							title="Facebook"></i>Facebook</a><br />
+							title="Facebook"></i><span>Facebook</span></a><br />
 					<a href="https://github.com/siyang-jiang/" class="sticky-a"><i class="fa fa-github fa-2x"
-							aria-hidden="true" title="Github"></i>Github</a><br />
+							aria-hidden="true" title="Github"></i><span>Github</span></a><br />
 					<a href=" https://scholar.google.com/citations?user=8qJS75YAAAAJ&hl=en" class="sticky-a"><i
 							class="fa fa-google-plus-circle fa-2x" aria-hidden="true"
-							title="Google"></i>Google</a><br />
+							title="Google"></i><span>Google</span></a><br />
 					<a href="./img/Curriculum_Vitae.pdf" class="sticky-a"><i class="fa fa-file-text fa-2x"
-							aria-hidden="true" title="Curriculum_Vitae"></i>Curriculum_Vitae</a>
+							aria-hidden="true" title="Curriculum_Vitae"></i><span>Curriculum_Vitae</span></a>
 				</div>
 			</div>
 		</div>
@@ -50,8 +59,17 @@
 		<!-- 新闻 -->
 		<div class="new" style="padding-bottom:15px ;">
 			<h1 class="new">News</h1>
-
 			<table>
+			<!-- 测试
+				<tr>
+					<td>
+						<ul class='table-ul'>
+							<li>Reviewer as <a href="https://2022.ecmlpkdd.org/"> ECML-PKDD 2022. </li>
+						</ul></a>
+					</td>
+					<th>2022-03-22</th>
+				</tr> 
+			 -->
 				<!-- 2022 -->
 				<!-- 1 -->
 				<tr>
@@ -70,9 +88,9 @@
 									IPSN 22.</a></li>
 						</ul>
 					</td>
-					<th>2022-01-18</th>
+					<th><span>2022-01-18</span></th>
 				</tr>
-				
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -89,14 +107,14 @@
 							<li>Congratulations! Kaggle Competition:
 								<a href="https://www.kaggle.com/c/sartorius-cell-instance-segmentation/leaderboard">Sartorius
 									- Cell Instance Segmentation.</a>
-									<br />
-									Top 4%, Silver Prize.
+								<br />
+								Top 4%, Silver Prize.
 							</li>
 						</ul>
 					</td>
 					<th>2021-12-30</th>
 				</tr>
-				
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -108,7 +126,7 @@
 					</td>
 					<th>2021-10-15</th>
 				</tr>
-				
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -118,7 +136,7 @@
 					</td>
 					<th>2021-09-16</th>
 				</tr>
-				
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -127,7 +145,7 @@
 					</td>
 					<th>2021-08-31</th>
 				</tr>
-				
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -138,7 +156,7 @@
 					</td>
 					<th>2021-04-03</th>
 				</tr>
-				
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -153,7 +171,7 @@
 					</td>
 					<th>2021-02-26</th>
 				</tr>
-				
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -166,7 +184,7 @@
 					</td>
 					<th>2021-02-18 </th>
 				</tr>
-				
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -184,8 +202,37 @@
 
 			</table>
 		</div>
-
+		<!-- Publications -->
 		<div class="Publications" id="Publications">
+			<!-- 测试 
+			<hr> or <h2 style="border-top:solid 1px #222222;">2021</h2>//选一个
+			<div class="b1">
+			
+				图片//注释
+				<div class="c1">
+					<img src="img/FPT_21_CRV%20(2).jpg" />
+					<abbr><b>FPT</b></abbr>
+				</div>
+				文字//注释
+				<div class="c1 d1">
+					Publications标题//注释
+					<h4 style="margin: 0;">Dataflow Systolic Array Implementations of
+						Exploring Dual-Triangular Structure in QR
+						Decomposition Using High-Level Synthesis</h4>
+					<p><b>Siyang Jiang</b>, Hsi-Wen Chen, Ming-Syan Chen</p>
+					<div style="display:inline-block;clear:both">
+						<P style="float: left;margin: 0px;">Proc. of the IEEE International Conference on Field
+							Programmable Technology (FPT 2021). Accept rate: 22.22%, 32 out of 144. </P>
+					</div>
+					<br />
+					按钮//注释
+					<ul style="float: left;margin: 0">
+						<li><a href="img/FPT_21_CRV (2).pdf" class="button">PDF</a></li>
+						<li><a href=" #" class=" button">CODE</a></li>
+					</ul>
+				</div>
+			</div>
+			-->
 			<!-- 1 -->
 			<div class="b1">
 				<!-- 标题 -->
@@ -211,12 +258,12 @@
 					<!-- 按钮 -->
 					<ul style="float: left;margin: 0">
 						<!-- <li><a href="img/PGADA_CRV__Copy_.pdf" class="button"">PDF</a></li> -->
-						<li><a href="https://arxiv.org/pdf/2205.03817.pdf" class="button">PDF</a></li>
+						<li><a href="img/PGADA_CRV__Copy_.pdf" class="button">PDF</a></li>
 						<li><a href=" https://github.com/siyang-jiang/PGADA" class=" button">CODE</a></li>
 					</ul>
 				</div>
 			</div>
-
+			<hr />
 			<!-- 2 -->
 			<div class="b1">
 				<!-- 图片 -->
@@ -243,7 +290,6 @@
 					</ul>
 				</div>
 			</div>
-
 			<!-- 3 -->
 			<div class="b1">
 				<!-- 时间 -->
@@ -260,17 +306,17 @@
 						Cooperative Multi-Agent Reinforcement Learning</h4>
 					<p>Jian Hu*, <b>Siyang Jiang*</b>, Haibin Wu, Seth Austin Harding, Shih-Wei Liao</p>
 					<div style="display:inline-block;clear:both">
-						<P style="float: left;margin: 0px;">* denotes equal contributions</P>
+						<P style="float: left;margin: 0px;"> *denotes equal contributions</P>
 					</div>
 					<br />
 					<!-- 按钮 -->
 					<ul style="float: left;margin: 0">
-						<li><a href="https://arxiv.org/pdf/2102.03479.pdf" class="button">PDF</a></li>
+						<li><a href="img/RIIT (2).pdf" class="button">PDF</a></li>
 						<li><a href="https://github.com/hijkzzz/pymarl2" class=" button">CODE</a></li>
 					</ul>
 				</div>
 			</div>
-
+			<hr />
 			<!-- 4 -->
 			<div class="b1">
 
@@ -293,44 +339,25 @@
 					<br />
 					<!-- 按钮 -->
 					<ul style="float: left;margin: 0">
-						<li><a href="https://ieeexplore.ieee.org/document/9609814" class="button">PDF</a></li>
+						<li><a href="img/FPT_21_CRV (2).pdf" class="button">PDF</a></li>
 						<li><a href=" #" class=" button">CODE</a></li>
 					</ul>
 				</div>
 			</div>
-			<!-- 测试 
-			<div class="b1">
-			
-				图片//注释
-				<div class="c1">
-					<img src="img/FPT_21_CRV%20(2).jpg" />
-					<abbr><b>FPT</b></abbr>
-				</div>
-				文字//注释
-				<div class="c1 d1">
-					Publications标题//注释
-					<h4 style="margin: 0;">Dataflow Systolic Array Implementations of
-						Exploring Dual-Triangular Structure in QR
-						Decomposition Using High-Level Synthesis</h4>
-					<p><b>Siyang Jiang</b>, Hsi-Wen Chen, Ming-Syan Chen</p>
-					<div style="display:inline-block;clear:both">
-						<P style="float: left;margin: 0px;">Proc. of the IEEE International Conference on Field
-							Programmable Technology (FPT 2021). Accept rate: 22.22%, 32 out of 144. </P>
-					</div>
-					<br />
-					按钮//注释
-					<ul style="float: left;margin: 0">
-						<li><a href="https://ieeexplore.ieee.org/document/9609814" class="button">PDF</a></li>
-						<li><a href=" #" class=" button">CODE</a></li>
-					</ul>
-				</div>
-			</div>
-			-->
+			<hr>
 		</div>
 
 		<!-- 经验 -->
 		<div class="Experience" id="Experience">
 			<h1>Experience</h1>
+			<!-- 测试 
+			<div class="Experience-content">
+				<h3 style="margin-top: 15px;">Research Assistant</h3>
+				<p>Department of Electrical Engineering, National Taiwan University.</p>
+				<p>Advisor: Prof. Ming-Syan Chen</p>
+				<p style="margin-bottom: 15px;">10/2019 - 06/2021</p>
+			</div>
+			-->
 			<!-- 1 -->
 			<div class="Experience-content">
 				<h3 style="margin-top: 15px;">Research Assistant</h3>
@@ -352,13 +379,7 @@
 				<p>Advisor: Prof. Ming-Syan Chen</p>
 				<p style="margin-bottom: 15px;">10/2019 - 06/2021</p>
 			</div>
-			<!-- 测试 
-			<div class="Experience-content">
-				<h3 style="margin-top: 15px;">Research Assistant</h3>
-				<p>Department of Electrical Engineering, National Taiwan University.</p>
-				<p>Advisor: Prof. Ming-Syan Chen</p>
-				<p style="margin-bottom: 15px;">10/2019 - 06/2021</p>
-			</div>-->
+			
 		</div>
 		<!-- Honors and Awards -->
 		<div class=" Honors" id="Honors">
@@ -371,5 +392,6 @@
 				<li>National College Student Business Plan Competition in 2016 Bronze Award</li>
 			</ul>
 		</div>
+		<div class="full"></div>
 	</body>
 </html>
