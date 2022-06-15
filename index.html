@@ -3,7 +3,7 @@
 	<head>
 		<link rel="icon"
 			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
-<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
 		<script type="text/javascript">
 			function loadCSS() {
 				if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
@@ -15,17 +15,17 @@
 			}
 			loadCSS();
 			//Publications文字行间距自适应
+			//ele    id值
+			//id     id值对应的字符串
 			function countLines(ele, id) {
 				var styles = window.getComputedStyle(ele, null);
 				var h = parseInt(styles.height, 10);
 				console.log('height:', h);
-				if (h < 130 ) {
+				if (h < 130) {
 					document.getElementById(id).style.lineHeight = "1.95";
-				}
-				else if (h < 150) {
+				} else if (h < 150) {
 					document.getElementById(id).style.lineHeight = "1.58";
-				}
-				else if (h > 170) {
+				} else if (h > 170) {
 					document.getElementById(id).style.lineHeight = "1.12";
 				}
 			}
@@ -272,7 +272,8 @@
 					<abbr><b>PAKDD</b></abbr>
 				</div>
 				<!-- 文字 -->
-				<div class="c1 d1 " id='p1'><!--该id值为函数countLines()的参数 -->
+				<div class="c1 d1 " id='p1'><!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
 					<!-- Publications标题 -->
 					<h4 style="margin: 0;"> PGADA: Perturbation-Guided Adversarial Alignment
 						for Few-shot Learning Under the Support-QueryShift </h4>
@@ -295,7 +296,7 @@
 			<hr />
 			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
 			<script>
-				countLines(p1,'p1');//该p1为标签id名字
+				countLines(p1, 'p1'); //该p1为标签id名字，
 			</script>
 			<!-- 2 -->
 			<div class="b1">
