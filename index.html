@@ -3,7 +3,7 @@
 	<head>
 		<link rel="icon"
 			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
-		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
 		<script type="text/javascript">
 			function loadCSS() {
 				if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
@@ -14,6 +14,21 @@
 				}
 			}
 			loadCSS();
+			//Publications文字行间距自适应
+			function countLines(ele, id) {
+				var styles = window.getComputedStyle(ele, null);
+				var h = parseInt(styles.height, 10);
+				console.log('height:', h);
+				if (h < 130 ) {
+					document.getElementById(id).style.lineHeight = "1.95";
+				}
+				else if (h < 150) {
+					document.getElementById(id).style.lineHeight = "1.58";
+				}
+				else if (h > 170) {
+					document.getElementById(id).style.lineHeight = "1.12";
+				}
+			}
 		</script>
 	</head>
 	<title>Si-Yang Jiang</title>
@@ -43,7 +58,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="introduce">
+		<div class="introduce" id='q'>
 			<h1>About Me</h1>
 			<p>I will go to the <a href="https://www.ie.cuhk.edu.hk/main/index.shtml"> Department of
 					Information Engineering, The Chinese University of Hong Kong (CUHK) </a> for my Ph. D. in Sept.
@@ -55,7 +70,6 @@
 			<p>My research interest includes AIoT, Fedearated Learning, Few-shot Learning and high-performance
 				computing. </p>
 		</div>
-
 		<!-- 新闻 -->
 		<div class="new" style="padding-bottom:15px ;">
 			<h1 class="new">News</h1>
@@ -213,7 +227,7 @@
 		<!-- Publications -->
 		<div class="Publications" id="Publications">
 			<!-- 测试 
-			<hr> or <h2 style="border-top:solid 1px #222222;">2021</h2>//选一个
+			<hr> or <h2 style="border-top:solid 1px #222222;">2021</h2>//选一��
 			<div class="b1">
 			
 				图片//注释
@@ -222,7 +236,7 @@
 					<abbr><b>FPT</b></abbr>
 				</div>
 				文字//注释
-				<div class="c1 d1">
+				<div class="c1 d1" id ='p1'>
 					Publications标题//注释
 					<h4 style="margin: 0;">Dataflow Systolic Array Implementations of
 						Exploring Dual-Triangular Structure in QR
@@ -240,6 +254,11 @@
 					</ul>
 				</div>
 			</div>
+			自动计算行间距，使对齐Publications左右对齐 //注释
+			<script>
+				v<script>
+				countLines(p1, 'p1');
+			</script>
 			-->
 			<!-- 1 -->
 			<div class="b1">
@@ -253,17 +272,17 @@
 					<abbr><b>PAKDD</b></abbr>
 				</div>
 				<!-- 文字 -->
-				<div class="c1 d1">
+				<div class="c1 d1 " id='p1'><!--该id值为函数countLines()的参数 -->
 					<!-- Publications标题 -->
 					<h4 style="margin: 0;"> PGADA: Perturbation-Guided Adversarial Alignment
-						for Few-shot Learning Under the Support-Query Shift  </h4>
+						for Few-shot Learning Under the Support-QueryShift </h4>
 					<p><b>Siyang Jiang</b>, Wei Ding, Hsi-Wen Chen, Ming-Syan Chen</p>
 					<div style="display:inline-block;clear:both">
-						<P style="float: left;margin: 0px;"> Proc. of the 26th Pacific-Asia Conference on Knowledge
+						<P style="float: left;margin: 0px;" class="e1"> Proc. of the 26th Pacific-Asia Conference on
+							Knowledge
 							Discovery and Data Mining (PAKDD, 2022). Accept rate: 19.30%, 121 out of 627. </P>
-							
 					</div>
-					<br />
+					<!-- <br /> -->
 					<!-- 按钮 -->
 					<ul style="float: left;margin: 0">
 						<!-- <li><a href="img/PGADA_CRV__Copy_.pdf" class="button"">PDF</a></li> -->
@@ -274,6 +293,10 @@
 				</div>
 			</div>
 			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p1,'p1');//该p1为标签id名字
+			</script>
 			<!-- 2 -->
 			<div class="b1">
 				<!-- 图片 -->
@@ -282,24 +305,31 @@
 					<abbr><b>IPSN</b></abbr>
 				</div>
 				<!-- 文字 -->
-				<div class="c1 d1">
+				<div class="c1 d1" id='p2'>
 					<!-- Publications标题 -->
 					<h4 style="margin: 0;">BalanceFL: Addressing Class Imbalance in Long-tail Federated
 						Learning</h4>
 					<p>Xian Shuai, Yulin Shen, <b>Siyang Jiang</b>, Zhihe Zhao, Wenhai Lan, Guoliang Xing</p>
 					<div style="display:inline-block;clear:both">
 						<P style="float: left;margin: 0px;"> ACM/IEEE Intermational Conference
-							on Information Processing in Sensor Networks (IPSN 2022). Accept rate: 30.15%, 38 out of
-							126. </P>
+							<!-- on Information Processing in Sensor Networks (IPSN 2022). Accept rate: 30.15%, 38 out of
+							126. -->
+						</P>
 					</div>
 					<br />
 					<!-- 按钮 -->
 					<ul style="float: left;margin: 0">
-						<li><a href="https://conferences.computer.org/cpsiot/pdfs/IPSN2022-6R1M30NXCSXmbVKUqzz1Of/962400a259/962400a259.pdf" class="button">PDF</a></li>
+						<li><a href="https://conferences.computer.org/cpsiot/pdfs/IPSN2022-6R1M30NXCSXmbVKUqzz1Of/962400a259/962400a259.pdf"
+								class="button">PDF</a></li>
 						<li><a href="https://github.com/sxontheway/BalanceFL" class=" button">CODE</a></li>
 					</ul>
 				</div>
 			</div>
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p2, 'p2');
+			</script>
+
 			<!-- 3 -->
 			<div class="b1">
 				<!-- 时间 -->
@@ -310,13 +340,13 @@
 					<abbr><b>RIIT</b></abbr>
 				</div>
 				<!-- 文字 -->
-				<div class="c1 d1">
+				<div class="c1 d1" id='p3'>
 					<!-- Publications标题 -->
 					<h4 style="margin: 0;">Rethinking The Implementation Tricks And Monotonicity Constraint In
 						Cooperative Multi-Agent Reinforcement Learning</h4>
 					<p>Jian Hu*, <b>Siyang Jiang*</b>, Haibin Wu, Seth Austin Harding, Shih-Wei Liao</p>
 					<div style="display:inline-block;clear:both">
-						<P style="float: left;margin: 0px;"> * denotes equal contributions</P>
+						<P style="float: left;margin: 0px;"> * Denotes equal contributions</P>
 					</div>
 					<br />
 					<!-- 按钮 -->
@@ -327,6 +357,10 @@
 				</div>
 			</div>
 			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p3, 'p3');
+			</script>
 			<!-- 4 -->
 			<div class="b1">
 
@@ -336,7 +370,7 @@
 					<abbr><b>FPT</b></abbr>
 				</div>
 				<!-- 文字 -->
-				<div class="c1 d1">
+				<div class="c1 d1" id='p4'>
 					<!-- Publications标题 -->
 					<h4 style="margin: 0;">Dataflow Systolic Array Implementations of
 						Exploring Dual-Triangular Structure in QR
@@ -355,6 +389,10 @@
 				</div>
 			</div>
 			<hr>
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p4, 'p4');
+			</script>
 		</div>
 
 		<!-- 经验 -->

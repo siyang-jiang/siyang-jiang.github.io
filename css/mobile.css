@@ -1,157 +1,175 @@
-body{
+body {
 	margin-top: 0;
 	color: #585858;
 	-webkit-text-size-adjust: none;
 }
+
 /* header */
-header h2{
-	padding:20px 0 20px 10%;
+header h2 {
+	padding: 20px 0 20px 10%;
 	margin: 0;
 	border-bottom: #bcbcbc solid 1px;
 	font-size: 2.3em;
 	font-weight: 700;
 }
-header a{
+
+header a {
 	color: #7d7d7d;
 }
-a{
-	text-decoration:none;
+
+a {
+	text-decoration: none;
 	color: #52adc8;
 }
-i{
+
+i {
 	margin: 8px 10px;
 }
+
 /* introduce */
-.sticky
-{
+.sticky {
 	margin-left: 40px;
 }
-.sticky-a
-{
+
+.sticky-a {
 	color: #535353;
 }
-.portrait{
-	border-radius:50%;
+
+.portrait {
+	border-radius: 50%;
 	width: 300px;
-	height: 300px 	;
+	height: 300px;
 }
-div.about{
-	box-sizing:border-box;
-	display:inline-block;
+
+div.about {
+	box-sizing: border-box;
+	display: inline-block;
 	padding-left: 30px;
 	font-size: 1.6em;
 	width: 60%;
 }
-div.about span{
-	display:none;
+
+div.about span {
+	display: none;
 }
-div.about br{
-	display:none;
+
+div.about br {
+	display: none;
 }
-div.about h3{
+
+div.about h3 {
 	font-size: 2em;
 	margin: 10px 0;
 }
-div.about p{
+
+div.about p {
 	font-size: 1.3em;
-	margin: 25px 0 ;
+	margin: 25px 0;
 }
 
-.introduce{
-	margin:50px 30px;
-	text-align:justify;
-	text-align-last:left;
+.introduce {
+	margin: 50px 30px;
+	text-align: justify;
+	text-align-last: left;
 }
-.introduce h1{
+
+.introduce h1 {
 	margin-left: -25px;
 	font-size: 3.5em;
 }
-.introduce p{
+
+.introduce p {
 	font-size: 2.1em;
 }
+
 /* news */
-.new{
-	text-align:justify;
-	text-align-last:left;
+.new {
+	text-align: justify;
+	text-align-last: left;
 }
-.new h1{
+
+.new h1 {
 	font-size: 3.5em;
 }
-table{
+
+table {
 	font-size: 2.1em;
 }
-td{
+
+td {
 	width: 78%;
 	padding-right: 3%;
 }
-th{
-	vertical-align:top;
-	font-weight:600;
+
+th {
+	vertical-align: top;
+	font-weight: 600;
 }
-.new ul{
+
+.new ul {
 	margin: 0;
 	padding-left: 50px;
 }
+
 /* Publications */
-div.Publications
-{
+div.Publications {
 	margin-top: 10px;
-	clear:both;
-	text-align:justify;
-	text-align-last:left;
+	clear: both;
+	text-align: justify;
+	text-align-last: left;
 }
-div.Publications h2
-{
-	 text-align-last: right;
-	 font-size: 2.4em;
-	 margin: 0;
-	 padding-right: 40px;
+
+div.Publications h2 {
+	text-align-last: right;
+	font-size: 2.4em;
+	margin: 0;
+	padding-right: 40px;
 }
-div.Publications p{
+
+div.Publications p {
 	font-size: 1.2em;
 	margin: 20px 0;
 }
-div.Publications h1
-{
+
+div.Publications h1 {
 	padding: 33px 0 0;
 	margin: 0;
 	font-size: 3.5em;
 }
-div.Publications h4{
+
+div.Publications h4 {
 	font-size: 1.35em;
 }
-div.b1
-{
-	overflow:auto;
+
+div.b1 {
+	overflow: auto;
 	margin-bottom: 20px;
-	
+
 }
 
 /* Publications的图片部分 */
-div.c1
-{
+div.c1 {
 	float: left;
 	margin: 50px 30px 0 5px;
 	position: relative;
 	
 }
 
-div.c1 img
-{
+div.c1 img {
 	height: 300px;
 	width: 430px;
 	border-radius: 10px;
 	box-shadow: 2px 2px 3px #585858;
-	margin-left: 20px;
 	border: #585858 1px solid;
 }
-div.d1{
+
+div.d1 {
 	margin-left: 30px;
 	display: inline-block;
 	font-size: 1.9em;
 }
-div.d1 a
-{
+
+div.d1 a {
 	text-decoration: none;
 	color: #000000;
 	border: solid 1px;
@@ -160,97 +178,100 @@ div.d1 a
 	font-size: 0.8em;
 	padding: 10px 15px;
 }
+
 /* 按钮 */
-div.d1 ul{
+div.d1 ul {
 	float: right;
 	list-style-type: none;
 	margin: 0;
 	padding: 20px 0 0 0;
 	margin-right: 350px;
-	
+
 }
-div.d1 li{
+
+div.d1 li {
 	margin: 10px 40px 20px 15px;
-	display:inline-block;
-	font-size:2.5rem;
-	
+	display: inline-block;
+	font-size: 2.5rem;
+
 }
+
 /* 小标签 */
-abbr
-{
+abbr {
 	position: absolute;
-	top:12px;
+	top: 12px;
 	left: 6px;
 	width: 100px;
 	background-color: #0FBEB3;
 	color: #FFFFFF;
 	border-radius: 10%;
-	font-size:1.8em;
+	font-size: 1.8em;
 	text-align-last: center !important;
-	padding:8px 13px ;
+	padding: 8px 13px;
 }
+
 /* Experience */
-div.Experience
-{	
+div.Experience {
 
 	text-align: left;
 	margin-top: 10px;
-	clear:both
+	clear: both
 }
-div.Experience h1
-{
+
+div.Experience h1 {
 	font-size: 3.5em;
 }
-div.Experience h3
-{
+
+div.Experience h3 {
 
 	margin: 5px 0;
-	padding-left:30px ;
+	padding-left: 30px;
 	font-size: 2.5em;
 }
-div.Experience p
-{
+
+div.Experience p {
 
 	margin: 5px 0;
-	padding-left:30px ;
+	padding-left: 30px;
 	padding-right: 20px;
 	font-size: 2em;
 }
-div.Experience-content
-{
-	border: solid 1px black ;
+
+div.Experience-content {
+	border: solid 1px black;
 	border-radius: 10px;
-	box-shadow:  2px 2px 3px #585858;
+	box-shadow: 2px 2px 3px #585858;
 	margin: 35px 20px;
 }
+
 /* Honors */
-div.Honors
-{
+div.Honors {
 	margin-top: 10px;
-	clear:both;
+	clear: both;
 	text-align: left;
 }
-div.Honors h1
-{
+
+div.Honors h1 {
 	font-size: 3.5em;
 }
-div.Honors ul
-{
+
+div.Honors ul {
 	font-size: 2.3em;
 	padding-left: 50px;
 }
-div.Honors li
-{
+
+div.Honors li {
 	line-height: 1.5;
 }
-div.Honors p
-{
+
+div.Honors p {
 	text-align: center;
 	font-weight: 600;
 	border-top: #585858 solid 1px;
-	margin-top:30px ;
+	margin-top: 30px;
 }
-div.full{
+
+div.full {
 	height: 50px;
 	width: 50px;
 }

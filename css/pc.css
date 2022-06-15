@@ -1,40 +1,42 @@
-body
-{
+body {
 	margin-top: 0;
 	color: #585858;
 	min-width: 1400px;
 }
+
 /* header */
-header h2
-{
-	padding:20px 0 20px 120px;
+header h2 {
+	padding: 20px 0 20px 120px;
 	margin: 0;
 	border-bottom: #bcbcbc solid 1px;
 }
-header a
-{
+
+header a {
 	color: #7d7d7d;
 }
 
-hr{
+hr {
 	display: none;
 }
+
 /* 简介 */
 /* 头像 */
-img.portrait{
+img.portrait {
 	border-radius: 9999px;
 	width: 100%;
 	max-width: 160px;
 	height: 160px;
-	padding:0 5px;
+	padding: 0 5px;
 	margin: 0 auto;
 }
+
 /* 个人介绍and常用社交平台 */
-h1.new{
-	margin :10px 0;
+h1.new {
+	margin: 10px 0;
 }
-div.sticky{
-    padding-top:5px;
+
+div.sticky {
+	padding-top: 5px;
 	width: 13%;
 	float: left;
 	padding-left: 7%;
@@ -42,238 +44,242 @@ div.sticky{
 	position: sticky;
 	top: 10px;
 }
-div.about{
-	box-sizing:border-box;
-	display:inline-block;
+
+div.about {
+	box-sizing: border-box;
+	display: inline-block;
 	padding-left: 10px;
 
 }
-div.about p{
+
+div.about p {
 	font-size: 0.8em;
 }
-a.sticky-a{
-	text-decoration:none;
+
+a.sticky-a {
+	text-decoration: none;
 	color: #222222;
 	font-size: 0.7em;
 }
-div.introduce{
-	text-align:justify;
-	text-align-last:left;
-	padding-left:20px;
-	padding-right:15px;
+
+div.introduce {
+	text-align: justify;
+	text-align-last: left;
+	padding-left: 20px;
+	padding-right: 15px;
 	width: 60%;
-	display:block;
+	display: block;
 	padding-top: 20px;
 	margin-left: 25%;
-	line-height:1.5;
+	line-height: 1.5;
 	font-size: 1em;
 }
-a{
-	text-decoration:none;
+
+a {
+	text-decoration: none;
 	color: #52adc8;
 }
 
 /* 新闻 */
-div.new
-{
+div.new {
 	width: 65%;
-	text-align:justify;
-	text-align-last:left;
-	padding-left:20px;
-	padding-right:15px;
-	display:block;
+	text-align: justify;
+	text-align-last: left;
+	padding-left: 20px;
+	padding-right: 15px;
+	display: block;
 	padding-top: 20px;
 	margin-left: 25%;
-	line-height:1.5;
+	line-height: 1.5;
 	font-size: 1em;
 }
-.table-ul
-{
-		display: inline-block;
-		margin: 0;
+
+.table-ul {
+	display: inline-block;
+	margin: 0;
 }
-th{
-	font-weight:600;
-	padding-right:15px ;
+
+th {
+	font-weight: 600;
+	padding-right: 15px;
 	width: 130px;
-	vertical-align:top;
+	vertical-align: top;
 }
-td
-{
+
+td {
 	padding-right: 40px;
 }
-i{
-	margin: 8px ;
+
+i {
+	margin: 8px;
 
 }
 
 /* Publications */
-div.Publications
-{
+div.Publications {
 
 	width: 65%;
 	font-size: 1em;
 	margin-left: 26.5%;
 	margin-top: 10px;
-	clear:both
-	
-}
-div.Publications h2
-{
-	 text-align: right;
+	clear: both
 }
 
-div.Publications h1
-{
+div.Publications h2 {
+	text-align: right;
+}
+
+div.Publications h1 {
 	padding: 33px 0 0;
 	margin: 0;
 }
-div.b1
-{
-	overflow:auto;
+
+div.b1 {
+	overflow: auto;
 	margin-bottom: 20px;
 }
 
 /* Publications的图片部分 */
-div.c1
-{
+div.c1 {
 	float: left;
 	margin: 0 30px 0 5px;
 	position: relative;
+	display: inline-block;
+	/* height: calc(50% - 75px); */
 }
 
-div.c1 img
-{
-	height: 140px;
-	width: 185px;
+div.c1 img {
+	height: 153px;
+	width: 205px;
 	border-radius: 10px;
 	box-shadow: 2px 2px 3px #585858;
 	margin-left: 20px;
 	border: #585858 1px solid;
+	text-align: center;	
 }
-abbr
-{
+
+abbr {
 	position: absolute;
-	top:4px;
+	top: 4px;
 	left: 10px;
 	background-color: #0FBEB3;
 	color: #FFFFFF;
 	border-radius: 2px;
-	font-size:75%;
+	font-size: 75%;
 	text-align: center;
 	width: 3.75rem;
 	height: 1.125rem;
-	
+
 }
+
 /* Publications的文字 */
-div.d1
-{
+div.d1 {
 	max-width: 600px;
 	width: 72.5%;
 	/* height: 170px; */
 	margin-right: 0px;
-	text-align:justify;
-	text-align-last:left;
+	text-align: justify;
+	text-align-last: left;
+	/* height: 175px; */
 }
-h4
-{
+
+h4 {
 	margin: 10px 0;
 }
-div.d1 p
-{
+
+div.d1 p {
 	margin: 5px 0;
-	line-height:1.4;
 }
+
 /* Publications的连接和按钮部分 */
-div.d1 a
-{
+div.d1 a {
 	text-decoration: none;
 	color: #000000;
 	border: solid 1px;
 	border-radius: 5px;
 	padding: 3px 5px;
 	font-size: 0.8em;
-	height: ;
 }
-div.d1 a:hover
-{
+
+div.d1 a:hover {
 	color: #0c9a91;
 }
-div.d1 ul{
+
+div.d1 ul {
 	float: right;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	margin-right: 350px;
 }
-div.d1 li{
+
+div.d1 li {
 	margin: 10px 20px 10px 0;
-	display:inline-block;
-	font-size:1.1rem;
+	display: inline-block;
+	font-size: 1.1rem;
 }
+
 /* 按钮 */
-.button{
-	
-}
+.button {}
+
 /* Experience */
-div.Experience
-{	
+div.Experience {
 	width: 60%;
-	left:22.5%;
+	left: 22.5%;
 	text-align: left;
-	
+
 	font-size: 1em;
 	margin-left: 26.5%;
 	margin-top: 10px;
-	clear:both
+	clear: both
 }
-div.Experience h3
-{
+
+div.Experience h3 {
 
 	margin: 5px 0;
-	padding-left:30px ;
+	padding-left: 30px;
 
 }
-div.Experience p
-{
+
+div.Experience p {
 
 	margin: 5px 0;
-	padding-left:30px ;
+	padding-left: 30px;
 
 }
-div.Experience-content
-{
-	border: solid 1px black ;
+
+div.Experience-content {
+	border: solid 1px black;
 	border-radius: 10px;
-	box-shadow:  2px 2px 3px #585858;
+	box-shadow: 2px 2px 3px #585858;
 	margin: 35px 20px;
 }
 
 /*  Honors and Awards*/
-div.Honors
-{
+div.Honors {
 	width: 65%;
 	font-size: 1em;
 	margin-left: 26.5%;
 	margin-top: 10px;
-	clear:both;
+	clear: both;
 	text-align: left;
 }
-div.Honors ul
-{
+
+div.Honors ul {
 	font-size: 1.2em;
 }
-div.Honors li
-{
+
+div.Honors li {
 	line-height: 1.5;
 }
-div.Honors p
-{
+
+div.Honors p {
 	text-align: center;
 	font-weight: 600;
 	border-top: #585858 solid 1px;
-	margin-top:30px ;
+	margin-top: 30px;
 }
+
 div.full {
 	width: 100px;
 	height: 50px;
