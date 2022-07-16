@@ -14,13 +14,14 @@
 				}
 			}
 			loadCSS();
-			//Publications文字行间距自适应
-			//ele    id值
-			//id     id值对应的字符串
+			// Publications文字行间距自适应
+			// ele    id值
+			// id     id值对应的字符串
 			function countLines(ele, id) {
 				var styles = window.getComputedStyle(ele, null);
 				var h = parseInt(styles.height, 10);
 				console.log('height:', h);
+				console.log(hei);
 				if (h < 130) {
 					document.getElementById(id).style.lineHeight = "1.95";
 				} else if (h < 150) {
@@ -296,7 +297,7 @@
 			<hr />
 			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
 			<script>
-				countLines(p1, 'p1'); //该p1为标签id名字，
+				countLines(p1,'p1'); //该p1为标签id名字，
 			</script>
 			<!-- 2 -->
 			<div class="b1">
