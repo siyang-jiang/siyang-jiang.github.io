@@ -166,7 +166,7 @@ div.c1 img {
 div.d1 {
 	margin-left: 30px;
 	display: inline-block;
-	font-size: 1.9em;
+	font-size: 1.7em;
 }
 
 div.d1 a {
@@ -175,7 +175,7 @@ div.d1 a {
 	border: solid 1px;
 	border-radius: 5px;
 	padding: 3px 5px;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	padding: 10px 15px;
 }
 
@@ -225,6 +225,7 @@ div.Patent h3{
 	margin: 5px 0;
 	padding-left: 30px;
 	font-size: 2.3em;
+	text-transform:capitalize;
 }
 
 div.Patent p {
@@ -287,7 +288,7 @@ div.Honors h1 {
 }
 
 div.Honors ul {
-	font-size: 2.3em;
+	font-size: 2.2em;
 	padding-left: 50px;
 }
 
