@@ -210,6 +210,37 @@ abbr {
 	padding: 8px 13px;
 }
 
+div.Patent{
+	text-align: left;
+	margin-top: 10px;
+	clear: both
+}
+
+div.Patent h1{
+	font-size: 3.5em;
+	
+}
+
+div.Patent h3{
+	margin: 5px 0;
+	padding-left: 30px;
+	font-size: 2.3em;
+}
+
+div.Patent p {
+
+	margin: 5px 0;
+	padding-left: 30px;
+	padding-right: 20px;
+	font-size: 2em;
+}
+
+div.Patent-content {
+	border: solid 1px black;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px #585858;
+	margin: 35px 20px;
+}
 /* Experience */
 div.Experience {
 

@@ -21,16 +21,16 @@
 				var styles = window.getComputedStyle(ele, null);
 				var h = parseInt(styles.height, 10);
 				console.log('height:', h);
-				console.log(hei);
-				if (h < 130) {
+				if (h < 120) {
 					document.getElementById(id).style.lineHeight = "1.95";
-				} else if (h < 150) {
+				} else if (h < 142) {
 					document.getElementById(id).style.lineHeight = "1.58";
-				} else if (h > 170) {
+				} else if (h > 163) {
 					document.getElementById(id).style.lineHeight = "1.12";
 				}
 			}
 		</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	</head>
 	<title>Si-Yang Jiang</title>
 
@@ -206,7 +206,8 @@
 					<abbr><b>PAKDD</b></abbr>
 				</div>
 				<!-- 文字 -->
-				<div class="c1 d1 " id='p1'><!-- id值唯一！ -->
+				<div class="c1 d1 " id='p1'>
+					<!-- id值唯一！ -->
 					<!--该id值为函数countLines()的参数 -->
 					<!-- Publications标题 -->
 					<h4 style="margin: 0;"> PGADA: Perturbation-Guided Adversarial Alignment
@@ -230,7 +231,7 @@
 			<hr />
 			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
 			<script>
-				countLines(p1,'p1'); //该p1为标签id名字，
+				countLines(p1, 'p1'); //该p1为标签id名字，
 			</script>
 			<!-- 2 -->
 			<!-- <h2 style="border-top:solid 1px #222222;"></h2> -->
@@ -248,7 +249,8 @@
 						Learning</h4>
 					<p>Xian Shuai, Yulin Shen, <b>Siyang Jiang</b>, Zhihe Zhao, Wenhai Lan, Guoliang Xing</p>
 					<div style="display:inline-block;clear:both">
-						<P style="float: left;margin: 0px;"> ACM/IEEE Intermational Conference on Information Processing in Sensor Networks (IPSN 2022). Accept rate: 30.15%, 38 out of 126.
+						<P style="float: left;margin: 0px;"> ACM/IEEE Intermational Conference on Information Processing
+							in Sensor Networks (IPSN 2022). Accept rate: 30.15%, 38 out of 126.
 							<!-- on Information Processing in Sensor Networks (IPSN 2022). Accept rate: 30.15%, 38 out of
 							126. -->
 						</P>
@@ -331,7 +333,28 @@
 				countLines(p4, 'p4');
 			</script>
 		</div>
-
+		<div class="Patent">
+			<h1>Patent</h1>
+			<div class="Patent-content">
+				<h3 style="margin-top: 15px;"><a href="img/2018103437723-ElectronicPatentCertificate_805.pdf"> A Big Data-Based Learning Method for Complex Panel Data (Invention
+				Patent)</a></h3>
+				<p style="margin-bottom: 15px;">
+					Jiang Hui,Liu Bo,<b>Jiang Siyang. </b><br />
+					State Intellectual Property Office of the People's Republic of China,<br />
+					Patent No.: &nbsp;ZL 2018 1 0343772.3<br />
+					Patent Application Date:&nbsp; April 17, 2018<br />
+					Patent Grant Announcement Date: &nbsp;March 25, 2022
+				</p>
+			</div>
+			
+			<div class="Patent-content">
+				<h3 style="margin-top: 15px;">Big data intelligent collection and statistical analysis management system(Software Copyright)</h3>
+				<p style="margin-bottom: 15px;">
+					Used to collect and analyze large-capacity data which is difficult to capture, manage, and analyze<br />
+					Computer Software Copyright of China Certification ID: &nbsp;Z2018SR134747<br />
+				</p>
+			</div>
+		</div>
 		<!-- 经验 -->
 		<div class="Experience" id="Experience">
 			<h1>Experience</h1>
@@ -371,15 +394,15 @@
 			<h1>Honors and Awards</h1>
 			<ul>
 				<li><b>Best Student Paper Award, PAKDD 2022</b></li>
-				<li> 
+				<li>
 					Kaggle Competition:
 					<a href="https://www.kaggle.com/c/sartorius-cell-instance-segmentation/leaderboard">Sartorius
-						- Cell Instance Segmentation.</a> Top 4%, Silver Prize 
+						- Cell Instance Segmentation.</a> Top 4%, Silver Prize
 				</li>
 
 				<li> Kaggle Competition:<a
-					href="https://www.kaggle.com/c/cassava-leaf-disease-classification/overview/timeline">
-					Cassava Leaf Disease Classification.</a> Top 7%, Bronze Prize
+						href="https://www.kaggle.com/c/cassava-leaf-disease-classification/overview/timeline">
+						Cassava Leaf Disease Classification.</a> Top 7%, Bronze Prize
 				</li>
 
 				<li>National Cryptography Mathematics Challenge, Top 1% Sliver Prize </li>
@@ -397,7 +420,7 @@
 			</ul>
 
 		</div>
-		
+
 		<div class="full"></div>
 	</body>
 </html>
