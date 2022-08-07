@@ -6,14 +6,30 @@ body {
 }
 
 /* header */
-header h2 {
-	padding: 20px 0 20px 120px;
-	margin: 0;
+header {
 	border-bottom: #bcbcbc solid 1px;
+	background-color: #FFFFFF;
+
+}
+
+header h2 {
+	padding: 20px 20px 20px 110px;
+	margin: 0;
+	display: inline-block;
+	font-size: 1.4em;
 }
 
 header a {
 	color: #7d7d7d;
+}
+
+header span a{
+	margin-left: 20px;
+	color: #515151;
+}
+
+header span :hover{
+	color: #0FBEB3;
 }
 
 hr {
@@ -43,7 +59,7 @@ div.sticky {
 	padding-left: 7%;
 	margin-top: 20px;
 	position: sticky;
-	top: 10px;
+	top: 25px;
 }
 
 div.about {
@@ -63,6 +79,11 @@ a.sticky-a {
 	font-size: 0.7em;
 }
 
+.top{
+	position:fixed;
+	bottom: 35px;
+	right: 90px;
+}
 div.introduce {
 	text-align: justify;
 	text-align-last: left;
@@ -180,7 +201,7 @@ abbr {
 
 /* Publications的文字 */
 div.d1 {
-	max-width: 600px;
+	max-width: 601px;
 	width: 72.5%;
 	/* height: 170px; */
 	margin-right: 0px;
@@ -242,12 +263,19 @@ div.Patent{
 	clear: both;
 	text-transform:capitalize
 }
+
 div.Patent h3 {
 
 	margin: 5px 0;
 	padding-left: 30px;
 
 }
+
+div.Patent h1{
+	margin-top: 0;
+	padding-top: 20px;
+}
+
 div.Patent p {
 
 	margin: 5px 0;
@@ -266,11 +294,15 @@ div.Experience {
 	width: 60%;
 	left: 22.5%;
 	text-align: left;
-
 	font-size: 1em;
 	margin-left: 26.5%;
 	margin-top: 10px;
 	clear: both
+}
+
+div.Experience h1{
+	margin-top: 0;
+	padding-top: 20px;
 }
 
 div.Experience h3 {

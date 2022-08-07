@@ -27,6 +27,8 @@
 					document.getElementById(id).style.lineHeight = "1.58";
 				} else if (h > 164 && h < 200) {
 					document.getElementById(id).style.lineHeight = "1.12";
+				} else if (h >200&& h <230) {
+					document.getElementById(id).style.lineHeight = "0.98";
 				}
 			}
 		</script>
@@ -35,8 +37,12 @@
 	<title>Si-Yang Jiang</title>
 
 	<body>
-		<header>
-			<h2><a href="index.html">Siyang Jiang</a></h2>
+		<header id="header">
+			<h2><a href="index.html">Siyang Jiang (蒋思阳)</a></h2>
+			<span><a href="#Publications">Publications</a></span>
+			<span><a href="#Patent">Patent</a></span>
+			<span><a href="#Experience">Experience</a></span>
+			<span><a href="#Honors">Honors</a></span>
 		</header>
 		<div class="sticky" id="About" style='padding-top:5px;'>
 			<img src="img/1.png" class="portrait" />
@@ -57,8 +63,14 @@
 					<!-- <a href="./img/Curriculum_Vitae.pdf" class="sticky-a"><i class="fa fa-file-text fa-2x"
 							aria-hidden="true" title="Curriculum_Vitae"></i><span>Curriculum_Vitae</span></a> -->
 				</div>
+				
 			</div>
 		</div>
+		<!-- 回到顶部 -->
+		<div class="top">
+			<a href="#header " style="float: right;" title="TOP"><i class="fa fa-arrow-circle-up fa-3x"" aria-hidden="true"></i></a>
+		</div>
+
 		<div class="introduce" id='q'>
 			<h1>About Me</h1>
 			<p>I am a fresh Ph.D in <a href="https://www.ie.cuhk.edu.hk/main/index.shtml"> Department of
@@ -78,7 +90,7 @@
 				<tr>
 					<td>
 						<ul class='table-ul'>
-							<li>Congratulations! One paper is accepted in <a herf="https://www.worldscientific.com/worldscinet/jcsc"> JSCS</a>. This work is the first work which I attended as a supervisor (with Prof. Hui Jiang). The first author is an undergraduate (grade three) student when we submitted this work.   </li> 
+							<li>Congratulations! One paper is accepted in  <a href="https://www.worldscientific.com/worldscinet/jcsc"> JSCS</a>. This work is the first work which I attended as a supervisor (with Prof. Hui Jiang). The first author is an undergraduate (grade three) student when we submitted this work.   </li> 
 						</ul></a>
 					</td>
 					<th>2022-08-07</th>
@@ -216,17 +228,18 @@
 					<abbr><b>JCSC</b></abbr>
 				</div>
 				<!-- 文字 -->
-				<div class="c1 d1 " id='p1'>
+				<div class="c1 d1 " id='p5'>
 					<!-- id值唯一！ -->
 					<!--该id值为函数countLines()的参数 -->
 					<!-- Publications标题 -->
 					<h4 style="margin: 0;"> LiCAM: Long-Tailed Instance Segmentation with Real-Time Classification
 						Accuracy Monitoring </h4>
-					<p>Rongguang Ye, Yantong Guo, Xian Shuai, Rongye Ye, <b> Siyang Jiang<sup>&#10013</sup> </b>, Hui Jiang<sup>&#10013</sup> </p>
+					<p>Rongguang Ye, Yantong Guo, Xian Shuai,Rongye Ye, <b>Siyang Jiang<sup>&#10013</sup></b>, Hui Jiang<sup>&#10013</sup> </p>
 					<div style="display:inline-block;clear:both;width:100%;">
-						<P style="float: left;margin: 0px;"> Journal of Circuits, Systems and Computers (SCI, IF=1.33), 2022</P>
+						<P margin: 0px;" class="e1"> Journal of Circuits, Systems and Computers (SCI, IF=1.33), 2022</P>
+						<p><sup>&#10013</sup> Denotes the corresponding authors. </p>
 					</div>
-					<p><sup>&#10013</sup> denotes the corresponding authors. </p>
+					
 					<!-- <br /> -->
 					<!-- 按钮 -->
 					<ul style="float: left;margin: 0">
@@ -240,7 +253,7 @@
 			<hr />
 			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
 			<script>
-				countLines(p1, 'p1'); //该p1为标签id名字，
+				countLines(p5, 'p5'); //该p1为标签id名字，
 			</script>
 			
 			<!-- 4 -->
@@ -261,7 +274,7 @@
 					</h4>
 					<p><b>Siyang Jiang</b>, Wei Ding, Hsi-Wen Chen, Ming-Syan Chen</p>
 					<div style="display:inline-block;clear:both;width: 100%">
-						<P style="float: left;margin: 0px;" class="e1">
+						<P style="margin: 0px;" class="e1">
 							Proc. of the 26th Pacific-Asia Conference on
 							Knowledge Discovery and Data Mining (PAKDD, 2022). Accept rate: 19.30%, 121 out of 627.
 						</P>
@@ -390,8 +403,8 @@
 		</div>
 		
 		<!-- Patent -->
-		<div class="Patent">
-			<h1>Patent</h1>
+		<div class="Patent" id="Patent">
+			<h1  >Patent</h1>
 			<div class="Patent-content">
 				<h3 style="margin-top: 15px;"><a href="img/2018103437723-ElectronicPatentCertificate_805.pdf"> A Big
 						Data-Based Learning Method for Complex Panel Data (Invention
@@ -418,7 +431,7 @@
 		
 		<!-- 经验 -->
 		<div class="Experience" id="Experience">
-			<h1>Experience</h1>
+			<h1 >Experience</h1>
 			<!-- 测试 
 			<div class="Experience-content">
 				<h3 style="margin-top: 15px;">Research Assistant</h3>

@@ -5,10 +5,13 @@ body {
 }
 
 /* header */
-header h2 {
-	padding: 20px 0 20px 10%;
-	margin: 0;
+header {
 	border-bottom: #bcbcbc solid 1px;
+}
+header h2 {
+	padding: 20px 10px 20px 15px;
+	margin: 0;
+	display: inline-block;
 	font-size: 2.3em;
 	font-weight: 700;
 }
@@ -16,7 +19,10 @@ header h2 {
 header a {
 	color: #7d7d7d;
 }
-
+header span{
+	font-size: 1.6em;
+	margin-left: 10px;
+}
 a {
 	text-decoration: none;
 	color: #52adc8;
@@ -306,4 +312,8 @@ div.Honors p {
 div.full {
 	height: 50px;
 	width: 50px;
+}
+
+.top{
+	display: none;
 }
