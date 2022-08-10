@@ -9,7 +9,7 @@ header {
 	border-bottom: #bcbcbc solid 1px;
 }
 header h2 {
-	padding: 20px 10px 20px 15px;
+	padding: 20px 0 20px 50px;
 	margin: 0;
 	display: inline-block;
 	font-size: 2.3em;
@@ -19,9 +19,13 @@ header h2 {
 header a {
 	color: #7d7d7d;
 }
+.header_nev{
+	float: right;
+	margin-bottom: 20px;
+}
 header span{
 	font-size: 1.6em;
-	margin-left: 10px;
+	margin-left: 25px;
 }
 a {
 	text-decoration: none;
@@ -134,7 +138,7 @@ div.Publications h2 {
 
 div.Publications p {
 	font-size: 1.2em;
-	margin: 20px 0;
+	margin: 10px 0;
 }
 
 div.Publications h1 {
@@ -150,7 +154,7 @@ div.Publications h4 {
 div.b1 {
 	overflow: auto;
 	margin-bottom: 20px;
-
+	margin-right: 10px;	
 }
 
 /* Publications的图片部分 */
@@ -206,14 +210,14 @@ div.d1 li {
 abbr {
 	position: absolute;
 	top: 12px;
-	left: 6px;
+	left: -18px;
 	width: 100px;
 	background-color: #0FBEB3;
 	color: #FFFFFF;
 	border-radius: 10%;
 	font-size: 1.8em;
 	text-align-last: center !important;
-	padding: 8px 13px;
+	padding: 3px 13px;
 }
 
 div.Patent{

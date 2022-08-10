@@ -355,3 +355,6 @@ div.full {
 	width: 100px;
 	height: 50px;
 }
+.pc_none{
+	display: none;
+}
