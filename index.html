@@ -25,9 +25,11 @@
 					document.getElementById(id).style.lineHeight = "1.95";
 				} else if (h < 143) {
 					document.getElementById(id).style.lineHeight = "1.58";
+				} else if(h >= 144 && h <164){
+					document.getElementById(id).style.lineHeight = "1.35"
 				} else if (h > 164 && h < 200) {
 					document.getElementById(id).style.lineHeight = "1.12";
-				} else if (h >200&& h <230) {
+				} else if (h > 200 && h < 230) {
 					document.getElementById(id).style.lineHeight = "0.98";
 				}
 			}
@@ -39,7 +41,7 @@
 	<body>
 		<header id="header">
 			<h2><a href="index.html">Siyang Jiang (蒋思阳)</a></h2>
-			<br class="pc_none"/>
+			<br class="pc_none" />
 			<div class="header_nev" style="display: inline-block;">
 				<span><a href="#Publications">Publications</a></span>
 				<span><a href="#Patent">Patent</a></span>
@@ -62,26 +64,28 @@
 					<a href="https://github.com/siyang-jiang/" class="sticky-a"><i class="fa fa-github fa-2x"
 							aria-hidden="true" title="Github"></i><span>Github</span></a><br />
 					<a href=" https://scholar.google.com/citations?user=8qJS75YAAAAJ&hl=en" class="sticky-a"><i
-							class="fa fa-google-plus-circle fa-2x" aria-hidden="true"
-							title="Google"></i><span>Google Scholar</span></a><br />
+							class="fa fa-google-plus-circle fa-2x" aria-hidden="true" title="Google"></i><span>Google
+							Scholar</span></a><br />
 					<!-- <a href="./img/Curriculum_Vitae.pdf" class="sticky-a"><i class="fa fa-file-text fa-2x"
 							aria-hidden="true" title="Curriculum_Vitae"></i><span>Curriculum_Vitae</span></a> -->
 				</div>
-				
+
 			</div>
 		</div>
 		<!-- 回到顶部 -->
 		<div class="top">
-			<a href="#header " style="float: right;" title="TOP"><i class="fa fa-arrow-circle-up fa-3x"" aria-hidden="true"></i></a>
+			<a href="#header " style="float: right;" title="TOP"><i class="fa fa-arrow-circle-up fa-3x"" aria-hidden="
+					true"></i></a>
 		</div>
 
 		<div class="introduce" id='q'>
 			<h1>About Me</h1>
 			<p>I am a fresh Ph.D in <a href="https://www.ie.cuhk.edu.hk/main/index.shtml"> Department of
-					Information Engineering, The Chinese University of Hong Kong (CUHK) </a>, supervised by <a href="https://www.ie.cuhk.edu.hk/people/glxing.shtml">Prof. Guoliang
-					Xing</a>. Before that, I worked with  <a href="http://arbor.ee.ntu.edu.tw/~mschen/">Prof.
-					Ming-Syan Chen</a> in  <a href="https://graduate.ee.ntu.edu.tw/#/">NTU</a>.
-			My research interest includes AIoT, Fedearated Learning, Few-shot Learning and high-performance
+					Information Engineering, The Chinese University of Hong Kong (CUHK) </a>, supervised by <a
+					href="https://www.ie.cuhk.edu.hk/people/glxing.shtml">Prof. Guoliang
+					Xing</a>. Before that, I worked with <a href="http://arbor.ee.ntu.edu.tw/~mschen/">Prof.
+					Ming-Syan Chen</a> in <a href="https://graduate.ee.ntu.edu.tw/#/">NTU</a>.
+				My research interest includes AIoT, Fedearated Learning, Few-shot Learning and high-performance
 				computing. </p>
 		</div>
 		<!-- 新闻 -->
@@ -92,7 +96,22 @@
 				<tr>
 					<td>
 						<ul class='table-ul'>
-							<li>Congratulations! One paper is accepted in  <a href="https://www.worldscientific.com/worldscinet/jcsc"> JSCS</a>. This work is the first work which I attended as a supervisor (with Prof. Hui Jiang in  <a href="https://www.hzu.edu.cn/">HZU</a>). The first author is an undergraduate (grade three) student when we submitted this work.   </li> 
+							<li>Congratulations! One paper
+								is accepted in <a href="https://fpt22.hkust.edu.hk/">FPT 22.</a>
+							</li>
+						</ul>
+					</td>
+					<th>2022-10-12</th>
+				</tr> 
+				
+				<tr>
+					<td>
+						<ul class='table-ul'>
+							<li>Congratulations! One paper is accepted in <a
+									href="https://www.worldscientific.com/worldscinet/jcsc"> JSCS</a>. This work is the
+								first work which I attended as a supervisor (with Prof. Hui Jiang in <a
+									href="https://www.hzu.edu.cn/">HZU</a>). The first author is an undergraduate (grade
+								three) student when we submitted this work. </li>
 						</ul></a>
 					</td>
 					<th>2022-08-07</th>
@@ -101,7 +120,8 @@
 				<tr>
 					<td>
 						<ul class='table-ul'>
-							<li>Congratulations! Best Student Paper Award <a href="http://www.pakdd.net/awards.html"> PAKDD 2022. </li>
+							<li>Congratulations! Best Student Paper Award <a href="http://www.pakdd.net/awards.html">
+									PAKDD 2022. </li>
 						</ul></a>
 					</td>
 					<th>2022-05-19</th>
@@ -218,12 +238,46 @@
 			</script>
 			-->
 
-			<!-- 5 -->
+			<!-- 6 -->
 			<div class="b1">
 				<!-- 标题 -->
 				<h1>Publications</h1>
 				<!-- 时间 -->
 				<h2 style="border-top:solid 1px #222222;"></h2>
+				<!-- 图片 -->
+				<div class="c1">
+					<img src="img/FPT22.jpg" />
+					<abbr><b>FPT</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1 " id='p6'>
+					<!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;"> Towards Dual-Triangular QR Decomposition Acceleration via Systolic Array</h4>
+					<p><b>Siyang Jiang</b>, Rui Fang, Hsi-Wen Chen, Wei Ding and Ming-Syan Chen </p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="margin: 0px;" class="e1">
+							Proc. of the IEEE International Conference on Field Programmable
+							Technology (FPT 2022).
+						</P>
+					</div>
+
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="#" class="button">PDF</a></li>	
+						<li><a href="" class=" button">CODE</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p6, 'p6'); //该p1为标签id名字，
+			</script>
+
+			<!-- 5 -->
+			<div class="b1">
 				<!-- 图片 -->
 				<div class="c1">
 					<img src="img/JCSC.png" />
@@ -236,12 +290,13 @@
 					<!-- Publications标题 -->
 					<h4 style="margin: 0;"> LiCAM: Long-Tailed Instance Segmentation with Real-Time Classification
 						Accuracy Monitoring </h4>
-					<p>Rongguang Ye, Yantong Guo, Xian Shuai, Rongye Ye, <b>Siyang Jiang<sup >†</sup></b>, Hui Jiang<sup>†</sup> </p>
+					<p>Rongguang Ye, Yantong Guo, Xian Shuai, Rongye Ye, <b>Siyang Jiang<sup>†</sup></b>, Hui
+						Jiang<sup>†</sup> </p>
 					<div style="display:inline-block;clear:both;width:100%;">
-						<P margin: 0px;" class="e1"> Journal of Circuits, Systems and Computers (SCI), 2022</P>
+						<P style="margin: 0px;" class="e1"> Journal of Circuits, Systems and Computers (SCI), 2022</P>
 						<p><sup>†</sup> Denotes the corresponding authors. </p>
 					</div>
-					
+
 					<!-- <br /> -->
 					<!-- 按钮 -->
 					<ul style="float: left;margin: 0">
@@ -257,7 +312,7 @@
 			<script>
 				countLines(p5, 'p5'); //该p1为标签id名字，
 			</script>
-			
+
 			<!-- 4 -->
 			<div class="b1">
 				<!-- 图片 -->
@@ -270,9 +325,9 @@
 					<!-- id值唯一！ -->
 					<!--该id值为函数countLines()的参数 -->
 					<!-- Publications标题 -->
-					<h4 style="margin: 0;"> 
+					<h4 style="margin: 0;">
 						PGADA:Perturbation-Guided Adversarial Alignment
-						for Few-shot Learning Under the Support-QueryShift 
+						for Few-shot Learning Under the Support-QueryShift
 					</h4>
 					<p><b>Siyang Jiang</b>, Wei Ding, Hsi-Wen Chen, Ming-Syan Chen</p>
 					<div style="display:inline-block;clear:both;width: 100%">
@@ -296,7 +351,7 @@
 			<script>
 				countLines(p1, 'p1'); //该p1为标签id名字，
 			</script>
-			
+
 			<!-- 3 -->
 			<!-- <h2 style="border-top:solid 1px #222222;"></h2> -->
 			<div class="b1">
@@ -313,7 +368,7 @@
 
 					<p>Xian Shuai, Yulin Shen, <b>Siyang Jiang</b>, Zhihe Zhao, Zhenyu Yan, Guoliang Xing</p>
 					<div style="display:inline-block;clear:both;width:100%;">
-						<P style="float: left;margin: 0px;"> 
+						<P style="float: left;margin: 0px;">
 							ACM/IEEE Intermational Conference on Information Processing
 
 							in Sensor Networks (IPSN 2022). Accept rate: 30.15%, 38 out of 126.
@@ -330,6 +385,7 @@
 					</ul>
 				</div>
 			</div>
+			<hr />
 			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
 			<script>
 				countLines(p2, 'p2');
@@ -405,10 +461,10 @@
 				countLines(p4, 'p4');
 			</script>
 		</div>
-		
+
 		<!-- Patent -->
 		<div class="Patent" id="Patent">
-			<h1  >Patent</h1>
+			<h1>Patent</h1>
 			<div class="Patent-content">
 				<h3 style="margin-top: 15px;"><a href="img/2018103437723-ElectronicPatentCertificate_805.pdf"> A Big
 						Data-Based Learning Method for Complex Panel Data (Invention
@@ -423,8 +479,9 @@
 			</div>
 
 			<div class="Patent-content">
-				<h3 style="margin-top: 15px;"><a href="img/soft_1.png"> Big data intelligent collection and statistical analysis management
-					system (Software Copyright)</a> </h3>
+				<h3 style="margin-top: 15px;"><a href="img/soft_1.png"> Big data intelligent collection and statistical
+						analysis management
+						system (Software Copyright)</a> </h3>
 				<p style="margin-bottom: 15px;">
 					Used to collect and analyze large-capacity data which is difficult to capture, manage, and
 					analyze<br />
@@ -432,10 +489,10 @@
 				</p>
 			</div>
 		</div>
-		
+
 		<!-- 经验 -->
 		<div class="Experience" id="Experience">
-			<h1 >Experience</h1>
+			<h1>Experience</h1>
 			<!-- 测试 
 			<div class="Experience-content">
 				<h3 style="margin-top: 15px;">Research Assistant</h3>
@@ -467,7 +524,7 @@
 			</div>
 
 		</div>
-		
+
 		<!-- Honors and Awards -->
 		<div class=" Honors" id="Honors">
 			<h1>Honors and Awards</h1>
@@ -492,7 +549,7 @@
 
 
 			</ul>
-			<h1 id="AcademicService" >Academic Service</h1>
+			<h1 id="AcademicService">Academic Service</h1>
 			<ul>
 				<li>PC/Reviewer as WACV 21, ECML-PKDD 21-22</li>
 				<li>Session Chair as ECML-PKDD 21</li>
