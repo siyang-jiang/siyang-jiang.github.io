@@ -22,10 +22,10 @@
 				var h = parseInt(styles.height, 10);
 				console.log('height:', h);
 				if (h < 120) {
-					document.getElementById(id).style.lineHeight = "1.95";
+					document.getElementById(id).style.lineHeight = "2.00";
 				} else if (h < 143) {
 					document.getElementById(id).style.lineHeight = "1.58";
-				} else if(h >= 144 && h <164){
+				} else if (h >= 144 && h < 164) {
 					document.getElementById(id).style.lineHeight = "1.35"
 				} else if (h > 164 && h < 200) {
 					document.getElementById(id).style.lineHeight = "1.12";
@@ -103,19 +103,21 @@
 						</ul>
 					</td>
 					<th>2022-10-12</th>
-				</tr> 
-				
+				</tr>
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
 							<li>Congratulations! One paper
-								is accepted in <a href="https://www.sciencedirect.com/science/article/pii/S0893608022003914">Neural Networks.</a>
+								is accepted in <a
+									href="https://www.sciencedirect.com/science/article/pii/S0893608022003914">Neural
+									Networks.</a>
 							</li>
 						</ul>
 					</td>
 					<th>2022-10-07</th>
-				</tr> 
-				
+				</tr>
+
 				<tr>
 					<td>
 						<ul class='table-ul'>
@@ -215,9 +217,9 @@
 		</div>
 		<!-- Publications -->
 		<div class="Publications" id="Publications">
+
+			<!-- 8 -->
 			
-			<!-- 7 -->
-			<div class="b1">
 				<!-- 标题 -->
 				<h1>Publications</h1>
 				<!-- 时间 -->
@@ -226,15 +228,52 @@
 				<div class="b1">
 					<!-- 图片 -->
 					<div class="c1">
+						<img src="img/AAAI.jpg" />
+						<abbr><b>AAAI</b></abbr>
+					</div>
+					<!-- 文字 -->
+					<div class="c1 d1 " id='p8'>
+						<!-- id值唯一！ -->
+						<!--该id值为函数countLines()的参数 -->
+						<!-- Publications标题 -->
+						<h4 style="margin: 0;"> Incremental Reinforcement Learning with Dual-Adaptive ϵ-greedy Exploration</h4>
+						<p> Wei Ding∗, <b>Siyang Jiang∗</b>, Hsi-Wen Chen∗,Ming-Syan Chen </p>
+						<div style="display:inline-block;clear:both;width:100%;">
+							<P style="margin: 0px;" class="e1">
+								In proceedings of AAAI 2023. Accept rate: 19.60%, 1721 out of 8777<br>
+								∗ denotes the equal contribution.
+							</P>
+						</div>
+		
+						<!-- 按钮 -->
+						<ul style="float: left;margin: 0">
+							<li><a href="#" class="button">PDF</a></li>
+							<li><a href="" class=" button">CODE</a></li>
+						</ul>
+					</div>
+				</div>
+			
+			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p8, 'p8'); //该p1为标签id名字，
+			</script>
+			
+			<!-- 7 -->
+			
+				<div class="b1">
+					<!-- 图片 -->
+					<div class="c1">
 						<img src="img/FPT22.jpg" />
 						<abbr><b>FPT</b></abbr>
 					</div>
 					<!-- 文字 -->
-					<div class="c1 d1 " id='p6'>
+					<div class="c1 d1 " id='p7'>
 						<!-- id值唯一！ -->
 						<!--该id值为函数countLines()的参数 -->
 						<!-- Publications标题 -->
-						<h4 style="margin: 0;"> Dual-Triangular QR Decomposition with Global Acceleration and Partially Q-Rotation Skipping</h4>
+						<h4 style="margin: 0;"> Dual-Triangular QR Decomposition with Global Acceleration and Partially
+							Q-Rotation Skipping</h4>
 						<p> Rui Fang, <b>Siyang Jiang</b>, Hsi-Wen Chen, Wei Ding and Ming-Syan Chen </p>
 						<div style="display:inline-block;clear:both;width:100%;">
 							<P style="margin: 0px;" class="e1">
@@ -242,45 +281,48 @@
 								Technology (FPT 2022).
 							</P>
 						</div>
-	
+
 						<!-- 按钮 -->
 						<ul style="float: left;margin: 0">
-							<li><a href="#" class="button">PDF</a></li>	
+							<li><a href="#" class="button">PDF</a></li>
 							<li><a href="" class=" button">CODE</a></li>
 						</ul>
 					</div>
-				</div> 
-				
+				</div>
+			
 			<hr />
 			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
 			<script>
 				countLines(p7, 'p7'); //该p1为标签id名字，
 			</script>
-			
+
 			<!-- 6 -->
-			<div class="c1">
-				<img src="img/NN.jpg" />
-				<abbr><b>NN</b></abbr>
-			</div>
-			<!-- 文字 -->
-			<div class="c1 d1 " id='p7'>
-				<!-- id值唯一！ -->
-				<!--该id值为函数countLines()的参数 -->
-				<!-- Publications标题 -->
-				<h4 style="margin: 0;">Pairwise learning problems with regularization networks and Nyström subsampling approach</h4>
-				<p>Cheng Wang, Ting Hu, <b>Siyang Jiang</b></p>
-				<div style="display:inline-block;clear:both;width:100%;">
-					<P style="margin: 0px;" class="e1">
-						Neural Networks (2022)
-					</P>
+			<div class="b1">
+				<div class="c1">
+					<img src="img/NN.jpg" />
+					<abbr><b>NN</b></abbr>
 				</div>
-				<!-- 按钮 -->
-				<ul style="float: left;margin: 0">
-					<li><a href="https://www.sciencedirect.com/science/article/pii/S0893608022003914" class="button">PDF</a></li>	
-					<li><a href="" class=" button">CODE</a></li>
-				</ul>
+				<!-- 文字 -->
+				<div class="c1 d1 " id='p6'>
+					<!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;">Pairwise learning problems with regularization networks and Nyström
+						subsampling approach</h4>
+					<p>Cheng Wang, Ting Hu, <b>Siyang Jiang</b></p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="margin: 0px;" class="e1">
+							Neural Networks (2022)
+						</P>
+					</div>
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="https://www.sciencedirect.com/science/article/pii/S0893608022003914"
+								class="button">PDF</a></li>
+						<li><a href="" class=" button">CODE</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
 			<hr />
 			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
 			<script>
