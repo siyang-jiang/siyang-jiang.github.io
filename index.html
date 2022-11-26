@@ -41,14 +41,27 @@
 	<body>
 		<header id="header">
 			<h2><a href="index.html">Siyang Jiang (蒋思阳)</a></h2>
+			<ul class="menu">
+				<div class="dropdown">
+					<div class="dropbtn">
+						<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+					</div>
+					<div class="dropdown-content">
+						<a href="index.html">Home</a>
+						<a href="publications.html">Publications</a>
+					</div>
+					
+				</div>
+			</ul>
 			<br class="pc_none" />
 			<div class="header_nev" style="display: inline-block;">
-				<span><a href="#Publications">Publications</a></span>
+				<span><a href="#Publications">Selected Publications</a></span>
 				<span><a href="#Patent">Patent</a></span>
 				<span><a href="#Experience">Experience</a></span>
 				<span><a href="#Honors">Honors</a></span>
 				<span><a href="#AcademicService">Academic Service</a></span>
 			</div>
+			
 		</header>
 		<div class="sticky" id="About" style='padding-top:5px;'>
 			<img src="img/1.png" class="portrait" />
@@ -229,83 +242,48 @@
 		<!-- Publications -->
 		<div class="Publications" id="Publications">
 
+			<!-- 标题 -->
+			<h1>Selected Publications</h1>
+			<!-- 时间 -->
+			<h2 style="border-top:solid 1px #222222;"></h2>
 			<!-- 8 -->
-			
-				<!-- 标题 -->
-				<h1>Publications</h1>
-				<!-- 时间 -->
-				<h2 style="border-top:solid 1px #222222;"></h2>
+
+			<!-- 图片 -->
+			<div class="b1">
 				<!-- 图片 -->
-				<div class="b1">
-					<!-- 图片 -->
-					<div class="c1">
-						<img src="img/AAAI.jpg" />
-						<abbr><b>AAAI</b></abbr>
-					</div>
-					<!-- 文字 -->
-					<div class="c1 d1 " id='p8'>
-						<!-- id值唯一！ -->
-						<!--该id值为函数countLines()的参数 -->
-						<!-- Publications标题 -->
-						<h4 style="margin: 0;"> Incremental Reinforcement Learning with Dual-Adaptive ϵ-greedy Exploration</h4>
-						<p> Wei Ding*, <b>Siyang Jiang*</b>, Hsi-Wen Chen*,Ming-Syan Chen </p>
-						<div style="display:inline-block;clear:both;width:100%;">
-							<P style="margin: 0px;" class="e1">
-								In proceedings of AAAI 2023. Accept rate: 19.60%, 1721 out of 8777<br>
-								* denotes the equal contribution.
-							</P>
-						</div>
-		
-						<!-- 按钮 -->
-						<ul style="float: left;margin: 0">
-							<li><a href="#" class="button">PDF</a></li>
-							<li><a href="" class=" button">CODE</a></li>
-						</ul>
-					</div>
+				<div class="c1">
+					<img src="img/AAAI.jpg" />
+					<abbr><b>AAAI</b></abbr>
 				</div>
-			
+				<!-- 文字 -->
+				<div class="c1 d1 " id='p8'>
+					<!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;"> Incremental Reinforcement Learning with Dual-Adaptive ϵ-greedy Exploration
+					</h4>
+					<p> Wei Ding*, <b>Siyang Jiang*</b>, Hsi-Wen Chen*,Ming-Syan Chen </p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="margin: 0px;" class="e1">
+							In proceedings of AAAI 2023. Accept rate: 19.60%, 1721 out of 8777<br>
+							* denotes the equal contribution.
+						</P>
+					</div>
+
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="#" class="button">PDF</a></li>
+						<li><a href="" class=" button">CODE</a></li>
+					</ul>
+				</div>
+			</div>
+
 			<hr />
 			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
 			<script>
 				countLines(p8, 'p8'); //该p1为标签id名字，
 			</script>
-			
-			<!-- 7 -->
-			
-				<div class="b1">
-					<!-- 图片 -->
-					<div class="c1">
-						<img src="img/FPT22.jpg" />
-						<abbr><b>FPT</b></abbr>
-					</div>
-					<!-- 文字 -->
-					<div class="c1 d1 " id='p7'>
-						<!-- id值唯一！ -->
-						<!--该id值为函数countLines()的参数 -->
-						<!-- Publications标题 -->
-						<h4 style="margin: 0;"> Dual-Triangular QR Decomposition with Global Acceleration and Partially
-							Q-Rotation Skipping</h4>
-						<p> Rui Fang, <b>Siyang Jiang</b>, Hsi-Wen Chen, Wei Ding and Ming-Syan Chen </p>
-						<div style="display:inline-block;clear:both;width:100%;">
-							<P style="margin: 0px;" class="e1">
-								Proc. of the IEEE International Conference on Field Programmable
-								Technology (FPT 2022).
-							</P>
-						</div>
 
-						<!-- 按钮 -->
-						<ul style="float: left;margin: 0">
-							<li><a href="#" class="button">PDF</a></li>
-							<li><a href="https://github.com/siyang-jiang/DTQR-HLS" class=" button">CODE</a></li>
-						</ul>
-					</div>
-				</div>
-			
-			<hr />
-			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
-			<script>
-				countLines(p7, 'p7'); //该p1为标签id名字，
-			</script>
 
 			<!-- 6 -->
 			<div class="b1">
@@ -340,42 +318,7 @@
 				countLines(p6, 'p6'); //该p1为标签id名字，
 			</script>
 
-			<!-- 5 -->
-			<div class="b1">
-				<!-- 图片 -->
-				<div class="c1">
-					<img src="img/JCSC.png" />
-					<abbr><b>JCSC</b></abbr>
-				</div>
-				<!-- 文字 -->
-				<div class="c1 d1 " id='p5'>
-					<!-- id值唯一！ -->
-					<!--该id值为函数countLines()的参数 -->
-					<!-- Publications标题 -->
-					<h4 style="margin: 0;"> LiCAM: Long-Tailed Instance Segmentation with Real-Time Classification
-						Accuracy Monitoring </h4>
-					<p>Rongguang Ye, Yantong Guo, Xian Shuai, Rongye Ye, <b>Siyang Jiang<sup>†</sup></b>, Hui
-						Jiang<sup>†</sup> </p>
-					<div style="display:inline-block;clear:both;width:100%;">
-						<P style="margin: 0px;" class="e1"> Journal of Circuits, Systems and Computers, 2022</P>
-						<p><sup>†</sup> Denotes the corresponding authors. </p>
-					</div>
-
-					<!-- <br /> -->
-					<!-- 按钮 -->
-					<ul style="float: left;margin: 0">
-						<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0218126623500329"
-								class="button">PDF</a></li>
-						<li><a href="" class=" button">CODE</a></li>
-						<!-- <li><a href="" class=" button">Best Student Paper Award</a> </li> -->
-					</ul>
-				</div>
-			</div>
-			<hr />
-			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
-			<script>
-				countLines(p5, 'p5'); //该p1为标签id名字，
-			</script>
+		
 
 			<!-- 4 -->
 			<div class="b1">
@@ -455,75 +398,6 @@
 				countLines(p2, 'p2');
 			</script>
 
-			<!-- 2 -->
-			<div class="b1">
-				<!-- 时间 -->
-				<!-- <h2 style="border-top:solid 1px #222222;"></h2> -->
-				<!-- 图片 -->
-				<div class="c1">
-					<img src="img/RIIT.png" />
-					<abbr><b>RIIT</b></abbr>
-				</div>
-				<!-- 文字 -->
-				<div class="c1 d1" id='p3'>
-					<!-- Publications标题 -->
-					<h4 style="margin: 0;">
-						Rethinking The Implementation Tricks And Monotonicity Constraint In
-						Cooperative Multi-Agent Reinforcement Learning
-					</h4>
-					<p>Jian Hu*, <b>Siyang Jiang*</b>, Haibin Wu, Seth Austin Harding, Shih-Wei Liao</p>
-					<div style="display:inline-block;clear:both;width:100%;">
-						<P style="float: left;margin: 0px;"> * Denotes equal contributions</P>
-					</div>
-					<!-- 按钮 -->
-					<ul style="float: left;margin: 0">
-						<li><a href="https://arxiv.org/abs/2102.03479" class="button">PDF</a></li>
-						<li><a href="https://github.com/hijkzzz/pymarl2" class=" button">CODE</a></li>
-					</ul>
-				</div>
-			</div>
-			<hr />
-			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
-			<script>
-				countLines(p3, 'p3');
-			</script>
-
-			<!-- 1 -->
-			<div class="b1">
-
-				<!-- 图片 -->
-				<div class="c1">
-					<img src="img/FPT_21_CRV%20(2).jpg" />
-					<abbr><b>FPT</b></abbr>
-				</div>
-				<!-- 文字 -->
-				<div class="c1 d1" id='p4'>
-					<!-- Publications标题 -->
-					<h4 style="margin: 0;">
-						Dataflow Systolic Array Implementations of
-						Exploring Dual-Triangular Structure in QR
-						Decomposition Using High-Level Synthesis
-					</h4>
-					<p><b>Siyang Jiang</b>, Hsi-Wen Chen, Ming-Syan Chen</p>
-					<div style="display:inline-block;clear:both;width:100%;">
-						<P style="float: left;margin: 0px;">
-							Proc. of the IEEE International Conference on Field
-							Programmable Technology (FPT 2021). Accept rate: 22.22%, 32 out of 144.
-						</P>
-					</div>
-					<br />
-					<!-- 按钮 -->
-					<ul style="float: left;margin: 0">
-						<li><a href="https://ieeexplore.ieee.org/document/9609814" class="button">PDF</a></li>
-						<li><a href="https://github.com/siyang-jiang/DTQR-HLS" class=" button">CODE</a></li>
-					</ul>
-				</div>
-			</div>
-			<hr>
-			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
-			<script>
-				countLines(p4, 'p4');
-			</script>
 		</div>
 
 		<!-- Patent -->
@@ -621,6 +495,6 @@
 
 		</div>
 
-		<div class="full"></div>
+		<div class="full">   </div>
 	</body>
 </html>

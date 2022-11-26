@@ -1,0 +1,28 @@
+div.Publications-1 {
+	margin-top: 10px;
+	clear: both;
+	text-align: justify;
+	text-align-last: left;
+}
+
+div.Publications-1 h2 {
+	text-align-last: right;
+	font-size: 2.4em;
+	margin: 0;
+	padding-right: 40px;
+}
+
+div.Publications-1 p {
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+
+div.Publications-1 h1 {
+	padding: 33px 20px 0;
+	margin: 0;
+	font-size: 3.4em;
+}
+
+.Publications-1 h4 {
+	font-size: 1.35em;
+}

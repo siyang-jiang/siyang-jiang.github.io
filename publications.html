@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
+		<script type="text/javascript">
+			function loadCSS() {
+				if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))) {
+					document.write('<link href="./css/mobile.css" rel="stylesheet" type="text/css" media="screen" />');
+					document.write('<link href="./css/publications-m.css" rel="stylesheet" type="text/css" media="screen" />');
+
+				} else {
+					document.write('<link rel="stylesheet" type="text/css" href="./css/pc.css" />');
+					document.write('<link rel="stylesheet" type="text/css" href="./css/publications.css" />');
+				}
+			}
+			loadCSS();
+			// Publications文字行间距自适应
+			// ele    id值
+			// id     id值对应的字符串
+			function countLines(ele, id) {
+				var styles = window.getComputedStyle(ele, null);
+				var h = parseInt(styles.height, 10);
+				console.log('height:', h);
+				if (h < 120) {
+					document.getElementById(id).style.lineHeight = "2.00";
+				} else if (h < 143) {
+					document.getElementById(id).style.lineHeight = "1.58";
+				} else if (h >= 144 && h < 164) {
+					document.getElementById(id).style.lineHeight = "1.35"
+				} else if (h > 164 && h < 200) {
+					document.getElementById(id).style.lineHeight = "1.12";
+				} else if (h > 200 && h < 230) {
+					document.getElementById(id).style.lineHeight = "0.98";
+				}
+			}
+		</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+	</head>
+	<title>Si-Yang Jiang</title>
+	<body>
+		<header id="header">
+			<h2><a href="index.html">Siyang Jiang (蒋思阳)</a></h2>
+			<ul class="menu">
+				<div class="dropdown">
+					<div class="dropbtn">
+						<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+					</div>
+					<div class="dropdown-content">
+						<a href="index.html">Home</a>
+						<a href="publications.html">Publications</a>
+					</div>
+				</div>
+			</ul>
+
+		</header>
+		<div class="top">
+			<a href="#header " style="float: right;" title="TOP"><i class="fa fa-arrow-circle-up fa-3x"" aria-hidden="
+					true"></i></a>
+		</div>
+		<!-- Publications -->
+		<div class="Publications-1">
+
+			<!-- 标题 -->
+			<h1>Publications</h1>
+			<!-- 时间 -->
+			<h2 style="border-top:solid 1px #565656;" class="none">2022</h2>
+
+			<!-- 8 -->
+			<!-- 图片 -->
+			<div class="b1">
+				<!-- 图片 -->
+				<div class="c1">
+					<img src="img/AAAI.jpg" />
+					<abbr><b>AAAI</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1 " id='p8'>
+					<!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;"> Incremental Reinforcement Learning with Dual-Adaptive ϵ-greedy Exploration
+					</h4>
+					<p> Wei Ding*, <b>Siyang Jiang*</b>, Hsi-Wen Chen*,Ming-Syan Chen </p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="margin: 0px;" class="e1">
+							In proceedings of AAAI 2023. Accept rate: 19.60%, 1721 out of 8777<br>
+							* denotes the equal contribution.
+						</P>
+					</div>
+
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="#" class="button">PDF</a></li>
+						<li><a href="" class=" button">CODE</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p8, 'p8'); //该p1为标签id名字，
+			</script>
+
+			<!-- 7 -->
+
+			<div class="b1">
+				<!-- 图片 -->
+				<div class="c1">
+					<img src="img/FPT22.jpg" />
+					<abbr><b>FPT</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1 " id='p7'>
+					<!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;"> Dual-Triangular QR Decomposition with Global Acceleration and Partially
+						Q-Rotation Skipping</h4>
+					<p> Rui Fang, <b>Siyang Jiang</b>, Hsi-Wen Chen, Wei Ding and Ming-Syan Chen </p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="margin: 0px;" class="e1">
+							Proc. of the IEEE International Conference on Field Programmable
+							Technology (FPT 2022).
+						</P>
+					</div>
+
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="#" class="button">PDF</a></li>
+						<li><a href="https://github.com/siyang-jiang/DTQR-HLS" class=" button">CODE</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p7, 'p7'); //该p1为标签id名字，
+			</script>
+
+			<!-- 6 -->
+			<div class="b1">
+				<div class="c1">
+					<img src="img/NN.jpg" />
+					<abbr><b>NN</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1 " id='p6'>
+					<!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;">Pairwise learning problems with regularization networks and Nyström
+						subsampling approach</h4>
+					<p>Cheng Wang, Ting Hu, <b>Siyang Jiang</b></p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="margin: 0px;" class="e1">
+							Neural Networks (2022)
+						</P>
+					</div>
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="https://www.sciencedirect.com/science/article/pii/S0893608022003914"
+								class="button">PDF</a></li>
+						<!-- <li><a href="" class=" button">CODE</a></li> -->
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p6, 'p6'); //该p1为标签id名字，
+			</script>
+			<!-- 5 -->
+			<div class="b1">
+				<!-- 图片 -->
+				<div class="c1">
+					<img src="img/JCSC.png" />
+					<abbr><b>JCSC</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1 " id='p5'>
+					<!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;"> LiCAM: Long-Tailed Instance Segmentation with Real-Time Classification
+						Accuracy Monitoring </h4>
+					<p>Rongguang Ye, Yantong Guo, Xian Shuai, Rongye Ye, <b>Siyang Jiang<sup>†</sup></b>, Hui
+						Jiang<sup>†</sup> </p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="margin: 0px;" class="e1"> Journal of Circuits, Systems and Computers, 2022</P>
+						<p><sup>†</sup> Denotes the corresponding authors. </p>
+					</div>
+
+					<!-- <br /> -->
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0218126623500329"
+								class="button">PDF</a></li>
+						<li><a href="" class=" button">CODE</a></li>
+						<!-- <li><a href="" class=" button">Best Student Paper Award</a> </li> -->
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p5, 'p5'); //该p1为标签id名字，
+			</script>
+
+			<!-- 4 -->
+			<div class="b1">
+				<!-- 图片 -->
+				<div class="c1">
+					<img src="img/PGADA_CRV__Copy_.png" />
+					<abbr><b>PAKDD</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1 " id='p1'>
+					<!-- id值唯一！ -->
+					<!--该id值为函数countLines()的参数 -->
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;">
+						PGADA:Perturbation-Guided Adversarial Alignment
+						for Few-shot Learning Under the Support-QueryShift
+					</h4>
+					<p><b>Siyang Jiang</b>, Wei Ding, Hsi-Wen Chen, Ming-Syan Chen</p>
+					<div style="display:inline-block;clear:both;width: 100%">
+						<P style="margin: 0px;" class="e1">
+							Proc. of the 26th Pacific-Asia Conference on
+							Knowledge Discovery and Data Mining (PAKDD, 2022). Accept rate: 19.30%, 121 out of 627.
+						</P>
+					</div>
+					<!-- <br /> -->
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<!-- <li><a href="img/PGADA_CRV__Copy_.pdf" class="button"">PDF</a></li> -->
+						<li><a href="https://arxiv.org/abs/2205.03817" class="button">PDF</a></li>
+						<li><a href=" https://github.com/siyang-jiang/PGADA" class=" button">CODE</a></li>
+						<li><a href="img/best_pakdd21.pdf" class=" button">Best Student Paper Award</a> </li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p1, 'p1'); //该p1为标签id名字，
+			</script>
+
+			<!-- 3 -->
+			<!-- <h2 style="border-top:solid 1px #222222;"></h2> -->
+			<div class="b1">
+				<!-- 图片 -->
+				<div class="c1">
+					<img src="img/BalanceFL_hotcrp.png " />
+					<abbr><b>IPSN</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1" id='p2'>
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;">BalanceFL: Addressing Class Imbalance in Long-tail Federated
+						Learning</h4>
+
+					<p>Xian Shuai, Yulin Shen, <b>Siyang Jiang</b>, Zhihe Zhao, Zhenyu Yan, Guoliang Xing</p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="float: left;margin: 0px;">
+							ACM/IEEE Intermational Conference on Information Processing
+
+							in Sensor Networks (IPSN 2022). Accept rate: 30.15%, 38 out of 126.
+							<!-- on Information Processing in Sensor Networks (IPSN 2022). Accept rate: 30.15%, 38 out of
+							126. -->
+						</P>
+					</div>
+					<br />
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="https://conferences.computer.org/cpsiot/pdfs/IPSN2022-6R1M30NXCSXmbVKUqzz1Of/962400a259/962400a259.pdf"
+								class="button">PDF</a></li>
+						<li><a href="https://github.com/sxontheway/BalanceFL" class=" button">CODE</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p2, 'p2');
+			</script>
+			<hr />
+			
+			<!-- 时间 -->
+				<h2 style="border-top:solid 1px #565656" class="none">2021</h2>
+			<!-- 2 -->
+			<div class="b1">
+				<!-- 图片 -->
+				<!-- <div style="width: 15%;float: left;height: 300px;""></div> -->
+				<div class="c1">
+					
+					<img src="img/RIIT.png" />
+					<abbr><b>RIIT</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1" id='p3'>
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;">
+						Rethinking The Implementation Tricks And Monotonicity Constraint In
+						Cooperative Multi-Agent Reinforcement Learning
+					</h4>
+					<p>Jian Hu*, <b>Siyang Jiang*</b>, Haibin Wu, Seth Austin Harding, Shih-Wei Liao</p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="float: left;margin: 0px;"> * Denotes equal contributions</P>
+					</div>
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="https://arxiv.org/abs/2102.03479" class="button">PDF</a></li>
+						<li><a href="https://github.com/hijkzzz/pymarl2" class=" button">CODE</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p3, 'p3');
+			</script>
+
+			<!-- 1 -->
+			<div class="b1">
+
+				<!-- 图片 -->
+				<div class="c1">
+					<img src="img/FPT_21_CRV%20(2).jpg" />
+					<abbr><b>FPT</b></abbr>
+				</div>
+				<!-- 文字 -->
+				<div class="c1 d1" id='p4'>
+					<!-- Publications标题 -->
+					<h4 style="margin: 0;">
+						Dataflow Systolic Array Implementations of
+						Exploring Dual-Triangular Structure in QR
+						Decomposition Using High-Level Synthesis
+					</h4>
+					<p><b>Siyang Jiang</b>, Hsi-Wen Chen, Ming-Syan Chen</p>
+					<div style="display:inline-block;clear:both;width:100%;">
+						<P style="float: left;margin: 0px;">
+							Proc. of the IEEE International Conference on Field
+							Programmable Technology (FPT 2021). Accept rate: 22.22%, 32 out of 144.
+						</P>
+					</div>
+					<br />
+					<!-- 按钮 -->
+					<ul style="float: left;margin: 0">
+						<li><a href="https://ieeexplore.ieee.org/document/9609814" class="button">PDF</a></li>
+						<li><a href="https://github.com/siyang-jiang/DTQR-HLS" class=" button">CODE</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- 自动计算行间距，使对齐Publications左右对齐 -->
+			<script>
+				countLines(p4, 'p4');
+			</script>
+		</div>
+		<div class="full">   </div>
+<body>
+</html>
