@@ -24,7 +24,7 @@ This repository contains the source code for my personal academic website, showc
 ## 📈 Recent Highlights
 - 🏆 **Best Paper Award** at IPSN 2024
 - 🏆 **Best Student Paper Award** at PAKDD 2022
-- 📄 **Nature Machine Intelligence** publication (2025)
+<!-- - 📄 **Nature Machine Intelligence** publication (2025) -->
 - 🎯 **NeurIPS 2025** acceptance with Scholar Award
 
 ## 📧 Contact
