@@ -48,27 +48,32 @@
 		width: 20%;
 	}
 	.nav-menu {
-		background: #f8f8f8;
-		padding: 15px;
-		margin: 20px 0;
-		border-radius: 8px;
 		text-align: center;
+		margin: 20px 0;
+		padding: 10px 0;
+		font-size: 16px;
+		border-bottom: 1px solid #e0e0e0;
 	}
 	.nav-menu a {
 		text-decoration: none;
-		color: #333;
+		color: #555;
 		font-weight: 500;
-		margin: 0 20px;
-		padding: 8px 16px;
-		border-radius: 5px;
-		transition: background-color 0.3s;
+		padding: 8px 20px;
+		transition: color 0.3s;
+		position: relative;
 	}
 	.nav-menu a:hover {
-		background-color: #ddd;
+		color: #007acc;
 	}
 	.nav-menu a.active {
-		background-color: #007acc;
-		color: white;
+		color: #007acc;
+	}
+	.nav-menu a:not(:last-child)::after {
+		content: "|";
+		position: absolute;
+		right: -2px;
+		color: #ccc;
+		font-weight: 300;
 	}
 </style>
 </head>
@@ -78,11 +83,11 @@
 <h1>Publications</h1>
 
 <div class="nav-menu">
-    <a href="index.html">🏠 Home</a>
-    <a href="publications.html" class="active">📄 Publications</a>
-    <a href="awards.html">🏆 Awards</a>
-    <a href="services.html">🤝 Services</a>
-    <a href="teaching.html">📚 Teaching</a>
+    <a href="index.html">Home</a>
+    <a href="publications.html" class="active">Publications</a>
+    <a href="awards.html">Awards</a>
+    <a href="services.html">Services</a>
+    <a href="teaching.html">Teaching</a>
 </div>
 
 <h2>Selected Publications | <a href="https://scholar.google.com/citations?user=8qJS75YAAAAJ&hl=en">Full List</a></h2>
