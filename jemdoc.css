@@ -574,3 +574,68 @@ html {
         color: #b8b8b8 !important;
     }
 }
+
+/* --- Mobile responsive (phones / narrow tablets) --- */
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Stack only the bio table (fixed-width 670 + 240 headshot — overflows on phones) */
+    .bio-table,
+    .bio-table tbody,
+    .bio-table tr,
+    .bio-table td {
+        display: block;
+        width: 100% !important;
+    }
+
+    /* Headshot: cap width, center, and add top margin when stacked under bio */
+    .headshot {
+        width: 60% !important;
+        max-width: 220px;
+        height: auto;
+        margin: 1em auto 0.5em auto;
+    }
+
+    /* Nav menu: smaller, allow wrap */
+    .nav-menu {
+        font-size: 14px;
+        padding: 8px 0;
+        line-height: 1.8;
+    }
+    .nav-menu a {
+        padding: 6px 10px;
+    }
+
+    /* Headings: shrink so they don't overflow */
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.2em; }
+    h3 { font-size: 1.05em; }
+
+    /* Award / service / course cards: year was float:right — put it back inline */
+    .award-year,
+    .service-year,
+    .course-year {
+        float: none;
+        display: inline-block;
+        margin-left: 0.5em;
+        font-size: 0.9em;
+    }
+
+    /* GitHub corner SVG (inline width="80") — shrink on phones */
+    .github-corner svg {
+        width: 56px !important;
+        height: 56px !important;
+    }
+
+    /* Prevent any wide image from forcing horizontal scroll */
+    img { max-width: 100%; height: auto; }
+
+    /* Tables that stay table-shaped (teaching schedule) get horizontal scroll on overflow */
+    #layout-content { overflow-x: auto; }
+}
