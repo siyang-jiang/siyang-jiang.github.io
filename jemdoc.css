@@ -372,3 +372,205 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+/* --- Consolidated rules extracted from per-page inline <style> blocks --- */
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+}
+h1 { font-size: 2em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.1em; }
+p, ul, ol, table, td, th { font-size: 1em; }
+#tbPublications p,
+#tbPublications a,
+#tbTeaching td { font-size: 1em; }
+ul, ol { margin-bottom: 1em; }
+li { margin-bottom: 0.5em; }
+table { border-collapse: collapse; }
+td, th { padding: 6px 8px; vertical-align: top; }
+.smaller-image { width: 20%; }
+
+.nav-menu {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: color 0.3s;
+    position: relative;
+}
+.nav-menu a:hover { color: #007acc; }
+.nav-menu a.active { color: #007acc; }
+.nav-menu a:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -2px;
+    color: #ccc;
+    font-weight: 300;
+}
+
+/* --- Hover elevate (other card types) --- */
+
+.pub-card,
+.award-item,
+.service-section,
+.course-item,
+.teaching-philosophy {
+    transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+}
+.pub-card:hover,
+.award-item:hover,
+.service-section:hover,
+.course-item:hover,
+.teaching-philosophy:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 16px #ccc;
+}
+
+/* --- Scroll fade-in --- */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 400ms cubic-bezier(0.16, 1, 0.3, 1),
+                transform 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Smooth scroll --- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* --- Respect user motion preferences --- */
+
+@media (prefers-reduced-motion: reduce) {
+    .fade-in,
+    .pub-card,
+    .award-item,
+    .service-section,
+    .course-item,
+    .teaching-philosophy {
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    html { scroll-behavior: auto; }
+}
+
+/* --- Tagline (home page) --- */
+
+.tagline {
+    font-size: 1.15em;
+    font-style: italic;
+    color: #007acc;
+    margin: 0 0 1em 0;
+    font-weight: 400;
+}
+
+/* --- Headshot --- */
+
+.headshot {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    display: block;
+}
+
+/* --- Dark mode (system-controlled) --- */
+
+@media (prefers-color-scheme: dark) {
+    html,
+    body {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+    h1, h2, h3 {
+        color: #f0f0f0;
+    }
+    a {
+        color: #6ab7f5;
+    }
+    a:hover {
+        color: #9fcffa;
+    }
+    .tagline {
+        color: #6ab7f5;
+    }
+    .headshot {
+        box-shadow: none;
+        border: 1px solid #333;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        border-bottom-color: #333;
+    }
+    .nav-menu a {
+        color: #b0b0b0;
+    }
+    .nav-menu a:hover,
+    .nav-menu a.active {
+        color: #6ab7f5;
+    }
+    .nav-menu a:not(:last-child)::after {
+        color: #444;
+    }
+
+    /* All card-like containers (some have inline styles, so we use !important) */
+    .pub-card,
+    .award-item,
+    .service-section,
+    .course-item,
+    .teaching-philosophy {
+        background: #252525 !important;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4) !important;
+        color: #e0e0e0;
+    }
+    .pub-card:hover,
+    .award-item:hover,
+    .service-section:hover,
+    .course-item:hover,
+    .teaching-philosophy:hover {
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.6) !important;
+    }
+
+    /* Page-specific text colors */
+    .award-title,
+    .course-title {
+        color: #f0f0f0 !important;
+    }
+    .award-venue,
+    .service-venue,
+    .course-description {
+        color: #b8b8b8 !important;
+    }
+    .award-year,
+    .service-year,
+    .course-year {
+        color: #999 !important;
+    }
+    .award-description {
+        color: #c0c0c0 !important;
+    }
+    .service-category {
+        color: #6ab7f5 !important;
+    }
+
+    /* publications.html inline gray italic text (venue lines) — override via attribute selector */
+    .pub-card p[style*="color: #666"] {
+        color: #b8b8b8 !important;
+    }
+}

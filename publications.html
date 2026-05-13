@@ -2,90 +2,26 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<link rel="shortcut icon" href="myIcon.ico">
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta name="keywords" content="Siyang Jiang, Publications, Research Papers"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Siyang Jiang, Publications, Research Papers">
 <meta name="description" content="Siyang Jiang's Publications">
 
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
+<!-- OpenGraph -->
+<meta property="og:title" content="Publications — Siyang Jiang">
+<meta property="og:description" content="Selected publications by Siyang Jiang on federated learning, few-shot learning, and AIoT for healthcare.">
+<meta property="og:image" content="https://siyang-jiang.github.io/pic/my3.jpg">
+<meta property="og:url" content="https://siyang-jiang.github.io/publications.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Siyang Jiang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Publications — Siyang Jiang">
+<meta name="twitter:description" content="Selected publications on federated learning, few-shot learning, and AIoT for healthcare.">
+<meta name="twitter:image" content="https://siyang-jiang.github.io/pic/my3.jpg">
 
 <link rel="stylesheet" href="jemdoc.css" type="text/css">
 <title>Publications - Siyang Jiang</title>
-<style>
-	h1, h2, h3 {
-		font-weight: 600;
-		margin-top: 1.2em;
-		margin-bottom: 0.6em;
-	}
-	h1 {
-		font-size: 2em;
-	}
-	h2 {
-		font-size: 1.4em;
-	}
-	h3 {
-		font-size: 1.1em;
-	}
-	p, ul, ol, table, td, th {
-		font-size: 1em;
-	}
-	#tbPublications p,
-	#tbPublications a,
-	#tbTeaching td {
-		font-size: 1em;
-	}
-	ul, ol {
-		margin-bottom: 1em;
-	}
-	li {
-		margin-bottom: 0.5em;
-	}
-	table {
-		border-collapse: collapse;
-	}
-	td, th {
-		padding: 6px 8px;
-		vertical-align: top;
-	}
-	.smaller-image {
-		width: 20%;
-	}
-	.nav-menu {
-		text-align: center;
-		margin: 20px 0;
-		padding: 10px 0;
-		font-size: 16px;
-		border-bottom: 1px solid #e0e0e0;
-	}
-	.nav-menu a {
-		text-decoration: none;
-		color: #555;
-		font-weight: 500;
-		padding: 8px 20px;
-		transition: color 0.3s;
-		position: relative;
-	}
-	.nav-menu a:hover {
-		color: #007acc;
-	}
-	.nav-menu a.active {
-		color: #007acc;
-	}
-	.nav-menu a:not(:last-child)::after {
-		content: "|";
-		position: absolute;
-		right: -2px;
-		color: #ccc;
-		font-weight: 300;
-	}
-</style>
+<script src="scroll-fade.js" defer></script>
 </head>
 <body>
 <div id="layout-content" style="margin-top:25px">
@@ -112,7 +48,7 @@
 	<!-- ######################### MobiSys ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 6px;">
 					<b>A Multimodal Dataset and Benchmark for Human Action Scene Understanding and Reasoning</b>
 				</p>
@@ -125,7 +61,7 @@
 				<a href="https://www.arxiv.org/abs/2512.07136"> PDF </a> |
 				<a href="https://github.com/siyang-jiang/CUHK-X"> Code </a> |
 				<a href="https://siyang-jiang.github.io/CUHK-X/"> Project Page </a> |
-				<a href="https://openaiotlab.github.io/CUHK-X/assets/awards/20251104ACPBest_pre.pdf"> 🏆Best Presentation Award (ANAI Workshop@MobiCom 2025) </a> 
+				<a href="https://siyang-jiang.github.io/CUHK-X/assets/awards/20251104ACPBest_pre.pdf"> 🏆Best Presentation Award (ANAI Workshop@MobiCom 2025) </a>
 			</div>
 		</td>
 	</tr>
@@ -133,7 +69,7 @@
 <!-- ######################### NMI ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 5px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 8px;">
 					<b>Towards Compute-Efficient Byzantine-Robust Federated Learning within Fully Homomorphic Encryption</b>
 				</p>
@@ -146,13 +82,12 @@
 				<a href="https://www.nature.com/articles/s42256-025-01107-6"> PDF </a> |
 				<a href="https://github.com/siyang-jiang/Lancelot"> Code </a> |
 				<a href="docs/assets/lancelot/cover.pdf"> Cover Candidate </a> |
-				<span> 
-				<a href="https://neurips.cc/Conferences/2025/FinancialAssistance"> 🎉TechXplore, </a> <!--  📰  -->
+				<span>
+				<a href="https://techxplore.com/news/2025-10-lancelot-federated-combines-encryption-robust.html"> 🎉TechXplore, </a> <!--  📰  -->
 				<a href="https://bioengineer.org/efficient-byzantine-robust-federated-learning-with-homomorphic-encryption/"> BioEngineer, </a>
 				<a href="https://scienmag.com/efficient-byzantine-robust-federated-learning-with-homomorphic-encryption/"> ScienMag, </a>
 				<a href="https://mp.weixin.qq.com/s/O7CCA0uWW7XkEPbZXFpUeg?poc_token=HCggHWmjrIIPxOn_cssQ7e05EKrwED5lc3eAz9Kx"> 机器之心. </a>
 				</span>
-	
 			</div>
 		</td>
 	</tr>
@@ -162,7 +97,7 @@
 	<!-- ######################### NeurIPS ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 8px;">
 					<b>Dual Alignment Framework for Few-shot Learning with Inter-Set and Intra-Set Shifts</b>
 				</p>
@@ -170,13 +105,12 @@
 					<b>Siyang Jiang</b>, Rui Fang, Hsi-Wen, Chen, Guoliang Xing, Ming-Syan Chen
 				</p>
 				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					NeurIPS 2025 
+					NeurIPS 2025
 				</p>
 				<a href="https://neurips.cc/virtual/2025/poster/115878"> PDF </a> |
 				<a href="https://github.com/siyang-jiang/DUAL"> Code </a> |
 				<a href="https://siyang-jiang.github.io/DUAL/"> Project Page </a> |
-				<a href="https://neurips.cc/Conferences/2025/FinancialAssistance"> 🏆Scholar Award </a> 
-
+				<a href="https://neurips.cc/Conferences/2025/FinancialAssistance"> 🏆Scholar Award </a>
 			</div>
 		</td>
 	</tr>
@@ -186,7 +120,7 @@
 	<!-- ######################### UbiComp ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 8px;">
 					<b>DrHouse: An LLM-empowered Diagnostic Reasoning System through Harnessing Outcomes from Sensor Data and Expert Knowledge</b>
 				</p>
@@ -196,7 +130,7 @@
 				<p style="color: #666; font-style: italic; margin-bottom: 0;">
 					ACM IMWUT/UbiComp 2024
 				</p>
-				<a href="https://dl.acm.org/doi/10.1145/3699765"> PDF </a> 
+				<a href="https://dl.acm.org/doi/10.1145/3699765"> PDF </a>
 			</div>
 		</td>
 	</tr>
@@ -205,7 +139,7 @@
 	<!-- ######################### IPSN ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 8px;">
 					<b>ArtFL: Exploiting Data Resolution in Federated Learning for Dynamic Runtime Inference via Multi-Scale Training</b>
 				</p>
@@ -213,10 +147,10 @@
 					<b>Siyang Jiang</b>, Xian Shuai, Guoliang Xing
 				</p>
 				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					ACM/IEEE IPSN 2024 
+					ACM/IEEE IPSN 2024
 					<!-- (Core Ranking A<sup>*</sup>, CCF-B) -->
 				</p>
-				<a href="https://ieeexplore.ieee.org/document/10577356"> PDF </a> | 
+				<a href="https://ieeexplore.ieee.org/document/10577356"> PDF </a> |
 				<a href="https://github.com/siyang-jiang/ArtFL"> Code </a> |
 				<a href="https://github.com/siyang-jiang/ArtFL/tree/main/slides"> Slides </a> |
 				<!-- <a href="https://siyang-jiang.github.io/DUAL/Poster-DUAL.png"> Poster </a> | -->
@@ -229,7 +163,7 @@
 	<!-- ######################### AAAI ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 8px;">
 					<b>Incremental Reinforcement Learning with Dual-Adaptive ε-greedy Exploration</b>
 				</p>
@@ -237,12 +171,11 @@
 					Wei Ding*, <b>Siyang Jiang*</b>, Hsi-Wen Chen*, Ming-Syan Chen
 				</p>
 				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					AAAI 2023 
+					AAAI 2023
 				</p>
-			<a href="https://ojs.aaai.org/index.php/AAAI/article/view/25899"> PDF </a>  |
-			<a href="https://github.com/weiding98/DAE"> Code </a> |
-			<a href="poster/DAE.pdf"> Poster </a> 
-				</p>
+				<a href="https://ojs.aaai.org/index.php/AAAI/article/view/25899"> PDF </a>  |
+				<a href="https://github.com/weiding98/DAE"> Code </a> |
+				<a href="poster/DAE.pdf"> Poster </a>
 			</div>
 		</td>
 	</tr>
@@ -250,7 +183,7 @@
 	<!-- ######################### PAKDD ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 8px;">
 					<b>PGADA: Perturbation-Guided Adversarial Alignment for Few-shot Learning Under the Support-Query Shift</b>
 				</p>
@@ -258,12 +191,12 @@
 					<b>Siyang Jiang</b>, Wei Ding, Hsi-Wen Chen, Ming-Syan Chen
 				</p>
 				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					PAKDD 2022 
+					PAKDD 2022
 				</p>
-				<a href="https://link.springer.com/chapter/10.1007/978-3-031-05933-9_1"> PDF </a> | 
+				<a href="https://link.springer.com/chapter/10.1007/978-3-031-05933-9_1"> PDF </a> |
 				<a href="https://github.com/siyang-jiang/PGADA"> Code </a> |
 				<a href="slides/PGADA.pdf"> Slides </a> |
-				<a href="https://pakdd.net/awards.html" >🏆Best Student Paper Award</a> 
+				<a href="https://pakdd.net/awards.html" >🏆Best Student Paper Award</a>
 			</div>
 		</td>
 	</tr>
@@ -272,7 +205,7 @@
 	<!-- ######################### IoT-J ############################# -->
 	<!-- <tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 8px;">
 					<b>Efficiency Optimization Techniques in Privacy-Preserving Federated Learning with Homomorphic Encryption: A Brief Survey</b>
 				</p>
@@ -292,7 +225,7 @@
 	<!-- ######################### ICFPT ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
+			<div class="pub-card" style="background: #f8f8f8; border-radius: 8px; box-shadow: 2px 2px 8px #ddd; padding: 18px; border-left: 4px solid #007acc;">
 				<p style="font-size: 1.1em; margin-bottom: 8px;">
 					<b>Dataflow Systolic Array Implementations of Exploring Dual-Triangular Structure in QR Decomposition Using High-Level Synthesis</b>
 				</p>
