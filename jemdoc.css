@@ -585,21 +585,30 @@ html {
         margin-bottom: 15px;
     }
 
-    /* Stack only the bio table (fixed-width 670 + 240 headshot — overflows on phones) */
+    /* Stack only the bio table (fixed-width 670 + 240 headshot — overflows on phones).
+       Use flex column-reverse on the row so the headshot td (second in source)
+       renders ABOVE the bio td — natural mobile profile order: face -> name -> info. */
     .bio-table,
-    .bio-table tbody,
-    .bio-table tr,
+    .bio-table tbody {
+        display: block;
+        width: 100% !important;
+    }
+    .bio-table tr {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100% !important;
+    }
     .bio-table td {
         display: block;
         width: 100% !important;
     }
 
-    /* Headshot: cap width, center, and add top margin when stacked under bio */
+    /* Headshot: smaller, centered, tighter margins so it doesn't dominate */
     .headshot {
-        width: 60% !important;
-        max-width: 220px;
+        width: 45% !important;
+        max-width: 160px;
         height: auto;
-        margin: 1em auto 0.5em auto;
+        margin: 0.5em auto 0.5em auto;
     }
 
     /* Nav menu: smaller, allow wrap */
