@@ -633,8 +633,10 @@ html {
         height: 56px !important;
     }
 
-    /* Prevent any wide image from forcing horizontal scroll */
-    img { max-width: 100%; height: auto; }
+    /* Prevent any wide image from forcing horizontal scroll — only touch
+       images without explicit dimensions, so HTML width/height attrs (e.g.
+       22px social icons) keep working */
+    img:not([height]):not([width]) { max-width: 100%; height: auto; }
 
     /* Tables that stay table-shaped (teaching schedule) get horizontal scroll on overflow */
     #layout-content { overflow-x: auto; }
