@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Personal academic website for Siyang Jiang (PhD student, CUHK), served at https://siyang-jiang.github.io/ via GitHub Pages from the `master` branch. Pure static HTML + CSS — no build step, no JS framework, no tests.
+Personal academic website for Siyang Jiang (Postdoctoral Fellow, CUHK), served at https://siyang-jiang.github.io/ via GitHub Pages from the `master` branch. Pure static HTML + CSS — no build step, no JS framework, no tests.
 
 ## Running locally
 
@@ -30,13 +30,17 @@ Each page **duplicates** rather than shares:
 
 1. **Inline `<style>` blocks** at the top with typography rules (`h1/h2/h3`, `p/ul/ol/table`, `.smaller-image`) and the `.nav-menu` styling. This duplication is deliberate — there is no shared partial mechanism because Jekyll is off. When editing CSS, edit each page that needs the change, or move the rule into `jemdoc.css` (the shared stylesheet).
 2. **The `.nav-menu` block** linking to all five pages. The current page is marked with `class="active"`. Keep the list of links and their order identical across all five files.
-3. **Google Analytics snippet** with the placeholder ID `G-XXXXXXXXXX`. Analytics is not actually wired up; treat the ID as a stub until a real one is set, and update it in every page at once if it is.
+3. **Traffic counter** — `index.html` loads a ClustrMaps script; there is no Google Analytics on any page. If analytics is ever added, add it to every page at once.
 
 `jemdoc.css` is a modified jemdoc template and is the only stylesheet that is genuinely shared. Inline styles in each HTML file override it.
 
 ## Publication entries
 
-Each publication in `publications.html` is one `<tr>` containing a styled `<div>` with: title, authors (the owner's name `<b>Siyang Jiang</b>` bolded, `*` denotes equal contribution), venue in italic, then a pipe-separated link row (PDF / Code / Slides / Poster / Project Page / Award). Match this format when adding entries — reviewers of the site notice formatting drift.
+`publications.html` holds a single **Selected Publications** list, kept in sync with the CV by hand. The CV is deliberately *not* published here — do not add a CV PDF or link one without being asked.
+
+Each entry is one `<tr>` containing a `<div class="pub-card">` with `.pub-title`, `.pub-authors` (the owner's name `<b>Siyang Jiang</b>` bolded, `*` denotes equal contribution), `.pub-venue` in italic, then a pipe-separated link row (PDF / Code / Slides / Poster / Project Page / Challenge / Award) and an optional `.pub-media` span for press coverage. The card styling lives in the page's own `<style>` block, not inline on each card. Match this format when adding entries — reviewers of the site notice formatting drift.
+
+Project repos live under the **`openaiotlab`** GitHub org (e.g. `openaiotlab/CUHK-X`), not under `siyang-jiang`; most personal-account repos are private, so verify a URL resolves before linking it.
 
 ## Asset folder conventions
 

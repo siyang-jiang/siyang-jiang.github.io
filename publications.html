@@ -9,18 +9,48 @@
 
 <!-- OpenGraph -->
 <meta property="og:title" content="Publications — Siyang Jiang">
-<meta property="og:description" content="Selected publications by Siyang Jiang on federated learning, few-shot learning, and AIoT for healthcare.">
+<meta property="og:description" content="Publications by Siyang Jiang on multimodal sensing, activity reasoning, federated learning, and confidential model serving.">
 <meta property="og:image" content="https://siyang-jiang.github.io/pic/my3.jpg">
 <meta property="og:url" content="https://siyang-jiang.github.io/publications.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Siyang Jiang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Publications — Siyang Jiang">
-<meta name="twitter:description" content="Selected publications on federated learning, few-shot learning, and AIoT for healthcare.">
+<meta name="twitter:description" content="Publications on multimodal sensing, activity reasoning, federated learning, and confidential model serving.">
 <meta name="twitter:image" content="https://siyang-jiang.github.io/pic/my3.jpg">
 
 <link rel="stylesheet" href="jemdoc.css" type="text/css">
 <title>Publications - Siyang Jiang</title>
+<style>
+	.pub-card {
+		background: #f9f9f9;
+		border-radius: 8px;
+		padding: 20px;
+		border-left: 4px solid #007acc;
+	}
+	.pub-title {
+		font-size: 1.1em;
+		font-weight: 600;
+		margin-bottom: 6px;
+	}
+	.pub-authors {
+		margin-bottom: 6px;
+	}
+	.pub-venue {
+		color: #666;
+		font-style: italic;
+		margin-bottom: 0;
+	}
+	.pub-media {
+		display: block;
+		margin-top: 6px;
+	}
+	.pub-note {
+		font-size: 0.98em;
+		color: #666;
+		margin-bottom: 10px;
+	}
+</style>
 <script src="scroll-fade.js" defer></script>
 </head>
 <body>
@@ -36,103 +66,115 @@
     <a href="teaching.html">Teaching</a>
 </div>
 
-
-
 <h2>Selected Publications | <a href="https://scholar.google.com/citations?user=8qJS75YAAAAJ&hl=en">Full List</a></h2>
-<p style="font-size: 0.98em; color: #666; margin-bottom: 10px;">
+<p class="pub-note">
 	* denotes equal contribution
 </p>
 
 <table id="tbPublications" width="100%">
 
-	<!-- ######################### MobiSys ############################# -->
+	<!-- ######################### MobiSys 2026 ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 6px;">
-					<b>A Multimodal Dataset and Benchmark for Human Action Scene Understanding and Reasoning</b>
+			<div class="pub-card">
+				<p class="pub-title">
+					A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning
 				</p>
-				<p style="margin-bottom: 6px;">
+				<p class="pub-authors">
 					<b>Siyang Jiang</b>, Mu Yuan, Xiang Ji, Bufang Yang, Zeyu Liu, Lilin Xu, Yang Li, Yuting He, Liran Dong, Wenrui Lu, Zhenyu Yan, Xiaofan Jiang, Wei Gao, Hongkai Chen, Guoliang Xing
 				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
+				<p class="pub-venue">
 					ACM MobiSys 2026
 				</p>
 				<a href="https://www.arxiv.org/abs/2512.07136"> PDF </a> |
-				<a href="https://github.com/siyang-jiang/CUHK-X"> Code </a> |
-				<a href="https://siyang-jiang.github.io/CUHK-X/"> Project Page </a> |
-				<a href="https://siyang-jiang.github.io/CUHK-X/assets/awards/20251104ACPBest_pre.pdf"> 🏆Best Presentation Award (ANAI Workshop@MobiCom 2025) </a>
-					<span style="display:block; margin-top:6px;">
-					<a href="https://www.jiqizhixin.com/articles/2026-03-31-5"> 🎉机器之心, </a> <!--  📰  -->
+				<a href="https://github.com/openaiotlab/CUHK-X"> Code </a> |
+				<a href="https://openaiotlab.github.io/CUHK-X/"> Project Page </a> |
+				<a href="https://github.com/openaiotlab/CUHK-X-Challenge"> CUHK-X Challenge (Co-located with UbiComp/ISWC 2026) </a> |
+				<a href="https://openaiotlab.github.io/CUHK-X/assets/awards/20251104ACPBest_pre.pdf"> &#127942;Best Presentation Award (ANAI Workshop@MobiCom 2025) </a>
+				<span class="pub-media">
+					<a href="https://www.jiqizhixin.com/articles/2026-03-31-5"> &#127881;&#26426;&#22120;&#20043;&#24515;, </a>
 					<a href="https://www.mittrchina.com/news/detail/16417"> MIT Technology Review China, </a>
 					<a href="https://mp.weixin.qq.com/s/4D2rdtea-3ycvUGwQvNDSA"> DeepTech. </a>
-					</span>
-			</div>
-		</td>
-	</tr>
-
-<!-- ######################### NMI ############################# -->
-	<tr>
-		<td colspan="2" style="padding: 5px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 8px;">
-					<b>Towards Compute-Efficient Byzantine-Robust Federated Learning within Fully Homomorphic Encryption</b>
-				</p>
-				<p style="margin-bottom: 6px;">
-					<b>Siyang Jiang</b>, Hao Yang, Qipeng Xie, Chuan Ma, Sen Wang, Zhe Liu, Tao Xiang, Guoliang Xing
-				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					Nature Machine Intelligence 2025
-				</p>
-				<a href="https://www.nature.com/articles/s42256-025-01107-6"> PDF </a> |
-				<a href="https://github.com/siyang-jiang/Lancelot"> Code </a> |
-				<a href="docs/assets/lancelot/cover.pdf"> Cover Candidate </a>
-				<span style="display:block; margin-top:6px;">
-				<a href="https://techxplore.com/news/2025-10-lancelot-federated-combines-encryption-robust.html"> 🎉TechXplore, </a> <!--  📰  -->
-				<a href="https://bioengineer.org/efficient-byzantine-robust-federated-learning-with-homomorphic-encryption/"> BioEngineer, </a>
-				<a href="https://scienmag.com/efficient-byzantine-robust-federated-learning-with-homomorphic-encryption/"> ScienMag, </a>
-				<a href="https://mp.weixin.qq.com/s/O7CCA0uWW7XkEPbZXFpUeg?poc_token=HCggHWmjrIIPxOn_cssQ7e05EKrwED5lc3eAz9Kx"> 机器之心. </a>
 				</span>
 			</div>
 		</td>
 	</tr>
 
-
-
-	<!-- ######################### NeurIPS ############################# -->
+	<!-- ######################### Nature Machine Intelligence 2025 ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 8px;">
-					<b>Dual Alignment Framework for Few-shot Learning with Inter-Set and Intra-Set Shifts</b>
+			<div class="pub-card">
+				<p class="pub-title">
+					Towards Compute-Efficient Byzantine-Robust Federated Learning with Fully Homomorphic Encryption
 				</p>
-				<p style="margin-bottom: 6px;">
-					<b>Siyang Jiang</b>, Rui Fang, Hsi-Wen, Chen, Guoliang Xing, Ming-Syan Chen
+				<p class="pub-authors">
+					<b>Siyang Jiang</b>, Hao Yang, Qipeng Xie, Chuan Ma, Sen Wang, Zhe Liu, Tao Xiang, Guoliang Xing
 				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					NeurIPS 2025
+				<p class="pub-venue">
+					Nature Machine Intelligence 2025 (IF = 29.8)
 				</p>
-				<a href="https://neurips.cc/virtual/2025/poster/115878"> PDF </a> |
-				<a href="https://github.com/siyang-jiang/DUAL"> Code </a> |
-				<a href="https://siyang-jiang.github.io/DUAL/"> Project Page </a> |
-				<a href="https://neurips.cc/Conferences/2025/FinancialAssistance"> 🏆Scholar Award </a>
+				<a href="https://www.nature.com/articles/s42256-025-01107-6"> PDF </a> |
+				<a href="docs/assets/lancelot/cover.pdf"> Cover Candidate </a>
+				<span class="pub-media">
+					<a href="https://techxplore.com/news/2025-10-lancelot-federated-combines-encryption-robust.html"> &#127881;TechXplore, </a>
+					<a href="https://bioengineer.org/efficient-byzantine-robust-federated-learning-with-homomorphic-encryption/"> BioEngineer, </a>
+					<a href="https://scienmag.com/efficient-byzantine-robust-federated-learning-with-homomorphic-encryption/"> ScienMag, </a>
+					<a href="https://mp.weixin.qq.com/s/O7CCA0uWW7XkEPbZXFpUeg?poc_token=HCggHWmjrIIPxOn_cssQ7e05EKrwED5lc3eAz9Kx"> &#26426;&#22120;&#20043;&#24515;. </a>
+				</span>
 			</div>
 		</td>
 	</tr>
 
-
-
-	<!-- ######################### UbiComp ############################# -->
+	<!-- ######################### NeurIPS 2025 ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 8px;">
-					<b>DrHouse: An LLM-empowered Diagnostic Reasoning System through Harnessing Outcomes from Sensor Data and Expert Knowledge</b>
+			<div class="pub-card">
+				<p class="pub-title">
+					Dual Alignment Framework for Few-shot Learning with Inter-Set and Intra-Set Shifts
 				</p>
-				<p style="margin-bottom: 6px;">
-					Bufang Yang*, <b>Siyang Jiang*</b>, Lilin Xu, Kaiwei Liu, Hai Li, Guoliang Xing, HongKai Chen, Xiaofan Jiang, Zhenyu Yan
+				<p class="pub-authors">
+					<b>Siyang Jiang</b>, Rui Fang, Hsi-Wen Chen, Wei Ding, Guoliang Xing, Ming-Syan Chen
 				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
+				<p class="pub-venue">
+					NeurIPS 2025
+				</p>
+				<a href="https://neurips.cc/virtual/2025/poster/115878"> PDF </a> |
+				<a href="https://neurips.cc/Conferences/2025/FinancialAssistance"> &#127942;Scholar Award </a>
+			</div>
+		</td>
+	</tr>
+
+	<!-- ######################### IPSN 2024 ############################# -->
+	<tr>
+		<td colspan="2" style="padding: 10px 0;">
+			<div class="pub-card">
+				<p class="pub-title">
+					ArtFL: Exploiting Data Resolution in Federated Learning for Dynamic Runtime Inference via Multi-Scale Training
+				</p>
+				<p class="pub-authors">
+					<b>Siyang Jiang*</b>, Xian Shuai*, Guoliang Xing
+				</p>
+				<p class="pub-venue">
+					ACM/IEEE IPSN 2024
+				</p>
+				<a href="https://ieeexplore.ieee.org/document/10577356"> PDF </a> |
+				<a href="https://www.youtube.com/watch?v=eeK6yRVEG3U"> Demo </a> |
+				<a href="https://ipsn.acm.org/2024/awards.html"> &#127942;Best Paper Award (1/93 submissions) </a>
+			</div>
+		</td>
+	</tr>
+
+	<!-- ######################### IMWUT/UbiComp 2024 ############################# -->
+	<tr>
+		<td colspan="2" style="padding: 10px 0;">
+			<div class="pub-card">
+				<p class="pub-title">
+					DrHouse: An LLM-empowered Diagnostic Reasoning System through Harnessing Outcomes from Sensor Data and Expert Knowledge
+				</p>
+				<p class="pub-authors">
+					Bufang Yang*, <b>Siyang Jiang*</b>, Lilin Xu, Kaiwei Liu, Hai Li, Guoliang Xing, Hongkai Chen, Xiaofan Jiang, Zhenyu Yan
+				</p>
+				<p class="pub-venue">
 					ACM IMWUT/UbiComp 2024
 				</p>
 				<a href="https://dl.acm.org/doi/10.1145/3699765"> PDF </a>
@@ -140,113 +182,64 @@
 		</td>
 	</tr>
 
-
-	<!-- ######################### IPSN ############################# -->
+	<!-- ######################### AAAI 2023 ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 8px;">
-					<b>ArtFL: Exploiting Data Resolution in Federated Learning for Dynamic Runtime Inference via Multi-Scale Training</b>
+			<div class="pub-card">
+				<p class="pub-title">
+					Incremental Reinforcement Learning with Dual-Adaptive &epsilon;-greedy Exploration
 				</p>
-				<p style="margin-bottom: 6px;">
-					<b>Siyang Jiang</b>, Xian Shuai, Guoliang Xing
-				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					ACM/IEEE IPSN 2024
-					<!-- (Core Ranking A<sup>*</sup>, CCF-B) -->
-				</p>
-				<a href="https://ieeexplore.ieee.org/document/10577356"> PDF </a> |
-				<a href="https://github.com/siyang-jiang/ArtFL"> Code </a> |
-				<a href="https://github.com/siyang-jiang/ArtFL/tree/main/slides"> Slides </a> |
-				<!-- <a href="https://siyang-jiang.github.io/DUAL/Poster-DUAL.png"> Poster </a> | -->
-				<a href="https://www.youtube.com/watch?v=eeK6yRVEG3U"> Demo </a> |
-				<a href="https://ipsn.acm.org/2024/awards.html" >🏆Best Paper Award</a>
-			</div>
-		</td>
-	</tr>
-
-	<!-- ######################### AAAI ############################# -->
-	<tr>
-		<td colspan="2" style="padding: 10px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 8px;">
-					<b>Incremental Reinforcement Learning with Dual-Adaptive ε-greedy Exploration</b>
-				</p>
-				<p style="margin-bottom: 6px;">
+				<p class="pub-authors">
 					Wei Ding*, <b>Siyang Jiang*</b>, Hsi-Wen Chen*, Ming-Syan Chen
 				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
+				<p class="pub-venue">
 					AAAI 2023
 				</p>
-				<a href="https://ojs.aaai.org/index.php/AAAI/article/view/25899"> PDF </a>  |
+				<a href="https://ojs.aaai.org/index.php/AAAI/article/view/25899"> PDF </a> |
 				<a href="https://github.com/weiding98/DAE"> Code </a> |
 				<a href="poster/DAE.pdf"> Poster </a>
 			</div>
 		</td>
 	</tr>
 
-	<!-- ######################### PAKDD ############################# -->
+	<!-- ######################### PAKDD 2022 ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 8px;">
-					<b>PGADA: Perturbation-Guided Adversarial Alignment for Few-shot Learning Under the Support-Query Shift</b>
+			<div class="pub-card">
+				<p class="pub-title">
+					PGADA: Perturbation-Guided Adversarial Alignment for Few-shot Learning Under the Support-Query Shift
 				</p>
-				<p style="margin-bottom: 6px;">
+				<p class="pub-authors">
 					<b>Siyang Jiang</b>, Wei Ding, Hsi-Wen Chen, Ming-Syan Chen
 				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
+				<p class="pub-venue">
 					PAKDD 2022
 				</p>
 				<a href="https://link.springer.com/chapter/10.1007/978-3-031-05933-9_1"> PDF </a> |
-				<a href="https://github.com/siyang-jiang/PGADA"> Code </a> |
 				<a href="slides/PGADA.pdf"> Slides </a> |
-				<a href="https://pakdd.net/awards.html" >🏆Best Student Paper Award</a>
+				<a href="https://pakdd.net/awards.html"> &#127942;Best Student Paper Award (1/627 submissions) </a>
 			</div>
 		</td>
 	</tr>
 
-
-	<!-- ######################### IoT-J ############################# -->
-	<!-- <tr>
-		<td colspan="2" style="padding: 10px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 8px;">
-					<b>Efficiency Optimization Techniques in Privacy-Preserving Federated Learning with Homomorphic Encryption: A Brief Survey</b>
-				</p>
-				<p style="margin-bottom: 6px;">
-				Qipeng Xie, <b>Siyang Jiang</b>, Linshan Jiang,  Yongzhi Huang, Zhihe Zhao, Salabat Khan, Wangchen Dai, Zhe Liu, Kaishun Wu.
-				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					IEEE IoT-J 2024 (IF: 8.2)
-				</p>
-			<a href="https://ieeexplore.ieee.org/document/10589503"> PDF </a><br>
-			<a href="https://pakdd.net/awards.html" >🏆ESI Highly Cited Paper.</a> 
-				</p>
-			</div>
-		</td>
-	</tr> -->
-
-	<!-- ######################### ICFPT ############################# -->
+	<!-- ######################### IEEE IoT-J 2024 ############################# -->
 	<tr>
 		<td colspan="2" style="padding: 10px 0;">
-			<div class="pub-card" style="background: #f9f9f9; border-radius: 8px; padding: 20px; border-left: 4px solid #007acc;">
-				<p style="font-size: 1.1em; margin-bottom: 8px;">
-					<b>Dataflow Systolic Array Implementations of Exploring Dual-Triangular Structure in QR Decomposition Using High-Level Synthesis</b>
+			<div class="pub-card">
+				<p class="pub-title">
+					Efficiency Optimization Techniques in Privacy-Preserving Federated Learning with Homomorphic Encryption: A Brief Survey
 				</p>
-				<p style="margin-bottom: 6px;">
-					<b>Siyang Jiang</b>, Hsi-Wen Chen, Ming-Syan Chen
+				<p class="pub-authors">
+					Qipeng Xie, <b>Siyang Jiang</b>, Linshan Jiang, Yongzhi Huang, Zhihe Zhao, Salabat Khan, Wangchen Dai, Zhe Liu, Kaishun Wu
 				</p>
-				<p style="color: #666; font-style: italic; margin-bottom: 0;">
-					IEEE ICFPT 2021
+				<p class="pub-venue">
+					IEEE Internet of Things Journal 2024 (IF = 8.2)
 				</p>
-				<a href="https://ieeexplore.ieee.org/document/9609814"> PDF </a> |
-				<a href="https://github.com/siyang-jiang/DTQR-HLS"> Code </a>
+				<a href="https://ieeexplore.ieee.org/document/10589503"> PDF </a> |
+				<span>&#127942;ESI Highly Cited Paper</span>
 			</div>
 		</td>
 	</tr>
-
-
 
 </table>
 

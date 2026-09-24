@@ -1,6 +1,6 @@
 # Siyang Jiang - Academic Website
 
-🎓 **PhD Student in Information Engineering**  
+🎓 **Postdoctoral Fellow, Department of Information Engineering**  
 The Chinese University of Hong Kong (CUHK)
 
 ## 🌐 Website
@@ -9,22 +9,23 @@ Visit my academic website: [https://siyang-jiang.github.io/](https://siyang-jian
 ## 📝 About
 This repository contains the source code for my personal academic website, showcasing:
 
-- 📚 Research publications in AI-powered IoT systems (AIoT)
+- 📚 Research publications
 - 🏆 Awards and honors including Best Paper Awards
-- 👨‍🏫 Teaching experience and professional services
+- 👨‍🏫 Teaching, mentoring, and professional services
 - 📰 Latest news and updates from my research
 
 ## 🔬 Research Interests
-- AI-powered IoT systems (AIoT)
-- Foundation models for healthcare applications
-- Distributed/Federated data analytics
-- Byzantine-robust federated learning
-- Few-shot learning and domain adaptation
+Physical AI for people, across two threads:
+
+- **Multimodal sensing and activity reasoning** — multimodal sensing systems, plus the large-scale datasets and benchmarks behind them
+- **Privacy-preserving and efficient learning systems** — distributed training, on-device inference, and confidential model serving
 
 ## 📈 Recent Highlights
+- 🏅 **Schmidt Science Fellow Nominee** (2026)
+- 📊 **CUHK-X** multimodal dataset and benchmark accepted at ACM MobiSys 2026
+- 📄 **Nature Machine Intelligence** publication (2025)
 - 🏆 **Best Paper Award** at IPSN 2024
 - 🏆 **Best Student Paper Award** at PAKDD 2022
-<!-- - 📄 **Nature Machine Intelligence** publication (2025) -->
 - 🎯 **NeurIPS 2025** acceptance with Scholar Award
 
 ## 📧 Contact
@@ -39,4 +40,4 @@ This repository contains the source code for my personal academic website, showc
 - Optimized for academic presentation
 
 ---
-*Last updated: October 2025*
+*Last updated: September 2026*
