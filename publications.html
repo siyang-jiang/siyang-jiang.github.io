@@ -51,50 +51,51 @@
 		color: #666;
 		margin-bottom: 10px;
 	}
-	.first-author-papers {
-		margin-top: 24px;
+	.publication-views {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.4em;
+		line-height: 1.5;
 	}
-	.first-author-papers > summary {
+	.publication-view-option {
 		display: inline-flex;
-		align-items: center;
-		gap: 14px;
-		padding: 10px 16px;
-		border: 1px solid #007acc;
-		border-radius: 6px;
-		background: #007acc;
-		color: #fff;
-		font: inherit;
-		font-weight: 600;
-		line-height: 1.4;
-		cursor: pointer;
-		list-style: none;
+		align-items: baseline;
+		gap: 0.4em;
+		white-space: nowrap;
 	}
-	.first-author-papers > summary::-webkit-details-marker {
-		display: none;
+	.publication-views a {
+		font-weight: 400;
+		white-space: nowrap;
 	}
-	.first-author-papers > summary:hover {
-		background: #0063a6;
-		border-color: #0063a6;
+	.publication-views a[aria-current="page"] {
+		color: #222;
+		font-weight: 700;
+		border-bottom: 2px solid #007acc;
 	}
-	.first-author-papers > summary:focus-visible {
-		outline: 3px solid #224b8d;
+	.publication-views a:focus-visible {
+		outline: 2px solid #007acc;
 		outline-offset: 4px;
 	}
-	.first-author-papers .toggle-icon::before {
-		content: "+";
+	.publication-view-separator {
+		color: #999;
+		font-weight: 400;
 	}
-	.first-author-papers[open] .toggle-icon::before {
-		content: "−";
+	#tbPublications tr[hidden] {
+		display: none;
 	}
-	.first-author-content {
-		padding-top: 16px;
-	}
-	#tbFirstAuthorPublications p,
-	#tbFirstAuthorPublications a {
-		font-size: 1em;
+	@media (max-width: 480px) {
+		.publication-views {
+			font-size: 0.875em;
+			gap: 0.3em;
+		}
+		.publication-view-option {
+			gap: 0.3em;
+		}
 	}
 </style>
 <script src="scroll-fade.js" defer></script>
+<script src="publications.js" defer></script>
 </head>
 <body>
 <div id="layout-content" style="margin-top:25px">
@@ -109,15 +110,23 @@
     <a href="teaching.html">Teaching</a>
 </div>
 
-<h2>Selected Publications | <a href="https://scholar.google.com/citations?user=8qJS75YAAAAJ&hl=en">Full List</a></h2>
-<p class="pub-note">
-	* denotes equal contribution
-</p>
+<h2 class="publication-views" aria-label="Publication views">
+	<a href="#selected" data-publication-view="selected" aria-controls="tbPublications" aria-current="page">Selected Publications</a>
+	<span class="publication-view-option">
+		<span class="publication-view-separator" aria-hidden="true">|</span>
+		<a href="#representative" data-publication-view="representative" aria-controls="tbPublications">Representative</a>
+	</span>
+	<span class="publication-view-option">
+		<span class="publication-view-separator" aria-hidden="true">|</span>
+		<a href="https://scholar.google.com/citations?user=8qJS75YAAAAJ&hl=en">Full List</a>
+	</span>
+</h2>
+<p class="pub-note" id="publication-note" aria-live="polite">* denotes equal contribution</p>
 
-<table id="tbPublications" width="100%">
+<table id="tbPublications" width="100%" aria-label="Selected publications">
+<tbody>
 
-	<!-- ######################### MobiSys 2026 ############################# -->
-	<tr>
+	<tr data-year="2026" data-selected="true">
 		<td colspan="2" style="padding: 10px 0;">
 			<div class="pub-card">
 				<p class="pub-title">
@@ -145,8 +154,7 @@
 		</td>
 	</tr>
 
-	<!-- ######################### Nature Machine Intelligence 2025 ############################# -->
-	<tr>
+	<tr data-year="2025" data-selected="true">
 		<td colspan="2" style="padding: 10px 0;">
 			<div class="pub-card">
 				<p class="pub-title">
@@ -170,8 +178,7 @@
 		</td>
 	</tr>
 
-	<!-- ######################### NeurIPS 2025 ############################# -->
-	<tr>
+	<tr data-year="2025" data-selected="true">
 		<td colspan="2" style="padding: 10px 0;">
 			<div class="pub-card">
 				<p class="pub-title">
@@ -189,8 +196,7 @@
 		</td>
 	</tr>
 
-	<!-- ######################### IPSN 2024 ############################# -->
-	<tr>
+	<tr data-year="2024" data-selected="true">
 		<td colspan="2" style="padding: 10px 0;">
 			<div class="pub-card">
 				<p class="pub-title">
@@ -209,19 +215,7 @@
 		</td>
 	</tr>
 
-</table>
-
-<details class="first-author-papers" id="first-author-papers">
-	<summary>
-		First-author Papers
-		<span class="toggle-icon" aria-hidden="true"></span>
-	</summary>
-	<div class="first-author-content">
-		<h2>More First-author &amp; Co-first-author Papers</h2>
-		<p class="pub-note">Listed from newest to oldest. * denotes equal contribution.</p>
-		<table id="tbFirstAuthorPublications" width="100%">
-
-	<tr>
+	<tr data-year="2024" data-selected="false" hidden>
 		<td colspan="2" style="padding: 10px 0;">
 			<div class="pub-card">
 				<p class="pub-title">
@@ -238,7 +232,7 @@
 		</td>
 	</tr>
 
-	<tr>
+	<tr data-year="2023" data-selected="false" hidden>
 		<td colspan="2" style="padding: 10px 0;">
 			<div class="pub-card">
 				<p class="pub-title">
@@ -251,13 +245,12 @@
 					AAAI 2023
 				</p>
 				<a href="https://ojs.aaai.org/index.php/AAAI/article/view/25899"> PDF </a> |
-				<a href="https://github.com/weiding98/DAE"> Code </a> |
 				<a href="poster/DAE.pdf"> Poster </a>
 			</div>
 		</td>
 	</tr>
 
-	<tr>
+	<tr data-year="2022" data-selected="false" hidden>
 		<td colspan="2" style="padding: 10px 0;">
 			<div class="pub-card">
 				<p class="pub-title">
@@ -276,7 +269,7 @@
 		</td>
 	</tr>
 
-	<tr>
+	<tr data-year="2021" data-selected="false" hidden>
 		<td colspan="2" style="padding: 10px 0;">
 			<div class="pub-card">
 				<p class="pub-title">
@@ -293,9 +286,8 @@
 		</td>
 	</tr>
 
-		</table>
-	</div>
-</details>
+</tbody>
+</table>
 
 <div id="footer">
 	<div id="footer-text"></div>
