@@ -36,7 +36,7 @@ Each page **duplicates** rather than shares:
 
 ## Publication entries
 
-`publications.html` holds a single **Selected Publications** list, kept in sync with the CV by hand. The CV is deliberately *not* published here — do not add a CV PDF or link one without being asked.
+`publications.html` holds **Selected Publications** followed by a native `<details>` disclosure labeled **First-author Papers**. Expanding it reveals the remaining published first-author and co-first-author papers in reverse chronological order, without duplicating selected entries. Keep both lists in sync with the CV by hand. The CV is deliberately *not* published here — do not add a CV PDF or link one without being asked.
 
 Each entry is one `<tr>` containing a `<div class="pub-card">` with `.pub-title`, `.pub-authors` (the owner's name `<b>Siyang Jiang</b>` bolded, `*` denotes equal contribution), `.pub-venue` in italic, then a pipe-separated link row (PDF / Code / Slides / Poster / Project Page / Challenge / Award) and an optional `.pub-media` span for press coverage. The card styling lives in the page's own `<style>` block, not inline on each card. Match this format when adding entries — reviewers of the site notice formatting drift.
 

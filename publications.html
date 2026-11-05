@@ -51,6 +51,48 @@
 		color: #666;
 		margin-bottom: 10px;
 	}
+	.first-author-papers {
+		margin-top: 24px;
+	}
+	.first-author-papers > summary {
+		display: inline-flex;
+		align-items: center;
+		gap: 14px;
+		padding: 10px 16px;
+		border: 1px solid #007acc;
+		border-radius: 6px;
+		background: #007acc;
+		color: #fff;
+		font: inherit;
+		font-weight: 600;
+		line-height: 1.4;
+		cursor: pointer;
+		list-style: none;
+	}
+	.first-author-papers > summary::-webkit-details-marker {
+		display: none;
+	}
+	.first-author-papers > summary:hover {
+		background: #0063a6;
+		border-color: #0063a6;
+	}
+	.first-author-papers > summary:focus-visible {
+		outline: 3px solid #224b8d;
+		outline-offset: 4px;
+	}
+	.first-author-papers .toggle-icon::before {
+		content: "+";
+	}
+	.first-author-papers[open] .toggle-icon::before {
+		content: "−";
+	}
+	.first-author-content {
+		padding-top: 16px;
+	}
+	#tbFirstAuthorPublications p,
+	#tbFirstAuthorPublications a {
+		font-size: 1em;
+	}
 </style>
 <script src="scroll-fade.js" defer></script>
 </head>
@@ -168,6 +210,92 @@
 	</tr>
 
 </table>
+
+<details class="first-author-papers" id="first-author-papers">
+	<summary>
+		First-author Papers
+		<span class="toggle-icon" aria-hidden="true"></span>
+	</summary>
+	<div class="first-author-content">
+		<h2>More First-author &amp; Co-first-author Papers</h2>
+		<p class="pub-note">Listed from newest to oldest. * denotes equal contribution.</p>
+		<table id="tbFirstAuthorPublications" width="100%">
+
+	<tr>
+		<td colspan="2" style="padding: 10px 0;">
+			<div class="pub-card">
+				<p class="pub-title">
+					DrHouse: An LLM-empowered Diagnostic Reasoning System through Harnessing Outcomes from Sensor Data and Expert Knowledge
+				</p>
+				<p class="pub-authors">
+					Bufang Yang*, <b>Siyang Jiang*</b>, Lilin Xu, Kaiwei Liu, Hai Li, Guoliang Xing, Hongkai Chen, Xiaofan Jiang, Zhenyu Yan
+				</p>
+				<p class="pub-venue">
+					ACM IMWUT/UbiComp 2024
+				</p>
+				<a href="https://dl.acm.org/doi/10.1145/3699765"> PDF </a>
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" style="padding: 10px 0;">
+			<div class="pub-card">
+				<p class="pub-title">
+					Incremental Reinforcement Learning with Dual-Adaptive &epsilon;-greedy Exploration
+				</p>
+				<p class="pub-authors">
+					Wei Ding*, <b>Siyang Jiang*</b>, Hsi-Wen Chen*, Ming-Syan Chen
+				</p>
+				<p class="pub-venue">
+					AAAI 2023
+				</p>
+				<a href="https://ojs.aaai.org/index.php/AAAI/article/view/25899"> PDF </a> |
+				<a href="https://github.com/weiding98/DAE"> Code </a> |
+				<a href="poster/DAE.pdf"> Poster </a>
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" style="padding: 10px 0;">
+			<div class="pub-card">
+				<p class="pub-title">
+					PGADA: Perturbation-Guided Adversarial Alignment for Few-shot Learning Under the Support-Query Shift
+				</p>
+				<p class="pub-authors">
+					<b>Siyang Jiang</b>, Wei Ding, Hsi-Wen Chen, Ming-Syan Chen
+				</p>
+				<p class="pub-venue">
+					PAKDD 2022
+				</p>
+				<a href="https://link.springer.com/chapter/10.1007/978-3-031-05933-9_1"> PDF </a> |
+				<a href="slides/PGADA.pdf"> Slides </a> |
+				<a href="https://pakdd.net/awards.html"> &#127942;Best Student Paper Award (1/627 submissions) </a>
+			</div>
+		</td>
+	</tr>
+
+	<tr>
+		<td colspan="2" style="padding: 10px 0;">
+			<div class="pub-card">
+				<p class="pub-title">
+					Dataflow Systolic Array Implementations of Exploring Dual-Triangular Structure in QR Decomposition Using High-Level Synthesis
+				</p>
+				<p class="pub-authors">
+					<b>Siyang Jiang</b>, Hsi-Wen Chen, Ming-Syan Chen
+				</p>
+				<p class="pub-venue">
+					IEEE ICFPT 2021
+				</p>
+				<a href="https://ieeexplore.ieee.org/document/9609814"> PDF </a>
+			</div>
+		</td>
+	</tr>
+
+		</table>
+	</div>
+</details>
 
 <div id="footer">
 	<div id="footer-text"></div>
