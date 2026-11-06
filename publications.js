@@ -27,9 +27,9 @@
 
     table.setAttribute('aria-label', representative
       ? 'First-author and co-first-author publications, newest first'
-      : 'Selected publications');
+      : 'Selected papers');
     note.textContent = representative
-      ? 'First-author and co-first-author papers, newest first. * denotes equal contribution.'
+      ? 'Including co-first-author papers. Newest first. * denotes equal contribution.'
       : '* denotes equal contribution';
   }
 
