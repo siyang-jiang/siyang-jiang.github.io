@@ -401,6 +401,8 @@ td, th { padding: 6px 8px; vertical-align: top; }
     border-bottom: 1px solid #e0e0e0;
 }
 .nav-menu a {
+    display: inline-block;
+    white-space: nowrap;
     text-decoration: none;
     color: #555;
     font-weight: 500;

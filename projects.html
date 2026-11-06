@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Siyang Jiang, CUHK-X, MACS, multimodal sensing, human activity understanding">
+<meta name="description" content="CUHK-X: multimodal datasets, benchmarks, and recording systems for human activity recognition, understanding, and reasoning.">
+<meta property="og:title" content="Projects — Siyang Jiang">
+<meta property="og:description" content="Explore CUHK-X, its related publications, dataset, benchmarks, and challenge.">
+<meta property="og:image" content="https://siyang-jiang.github.io/pic/my3.jpg">
+<meta property="og:url" content="https://siyang-jiang.github.io/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Siyang Jiang">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Projects — Siyang Jiang">
+<meta name="twitter:description" content="Explore CUHK-X, its related publications, dataset, benchmarks, and challenge.">
+<meta name="twitter:image" content="https://siyang-jiang.github.io/pic/my3.jpg">
+<link rel="stylesheet" href="jemdoc.css" type="text/css">
+<title>Projects - Siyang Jiang</title>
+<style>
+    .project-intro p {
+        line-height: 1.65;
+    }
+    .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+        margin: 18px 0 14px;
+    }
+    .project-links a {
+        display: inline-block;
+        line-height: 1.5;
+    }
+    .project-links a:first-child {
+        font-weight: 600;
+    }
+    .project-challenge {
+        margin-bottom: 24px;
+    }
+    .pub-card {
+        background: #f9f9f9;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-left: 4px solid #007acc;
+    }
+    .pub-title {
+        font-size: 1.1em;
+        font-weight: 600;
+        margin: 0 0 6px;
+        padding: 0;
+        color: inherit;
+        line-height: 1.4;
+        border: 0;
+    }
+    .pub-authors {
+        margin-bottom: 6px;
+        line-height: 1.5;
+    }
+    .pub-venue {
+        color: #666;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    .pub-summary {
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .project-publications-link {
+        margin-top: 22px;
+    }
+    .copyright {
+        text-align: center;
+    }
+    @media (max-width: 480px) {
+        .project-links {
+            gap: 10px 18px;
+        }
+        .pub-card {
+            padding: 16px;
+        }
+    }
+</style>
+</head>
+<body>
+<div id="layout-content" style="margin-top:25px">
+
+<h1>Projects</h1>
+
+<div class="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="awards.html">Awards</a>
+    <a href="services.html">Services</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="projects.html" class="active" aria-current="page">Projects</a>
+</div>
+
+<main>
+<section class="project-intro" aria-labelledby="cuhk-x">
+    <h2 id="cuhk-x">CUHK-X</h2>
+    <p>CUHK-X brings together multimodal sensing, datasets, and benchmarks to study how people act in everyday environments. The goal is to help models recognize actions, understand their context, and reason about what may happen next.</p>
+    <p>The dataset contains <strong>64,267 samples</strong> of <strong>40 actions</strong> from <strong>30 participants</strong> across two indoor environments. It combines seven synchronized modalities: RGB, depth, infrared, thermal, IMU, mmWave radar, and skeleton. Its benchmarks cover human action recognition (HAR), understanding (HAU), and reasoning (HARn).</p>
+
+    <nav class="project-links" aria-label="CUHK-X resources">
+        <a href="https://openaiotlab.github.io/CUHK-X/">Project Website ↗</a>
+        <a href="https://openaiotlab.github.io/CUHK-X/dataset.html">Dataset ↗</a>
+        <a href="https://openaiotlab.github.io/CUHK-X/benchmarks.html">Benchmarks ↗</a>
+        <a href="https://openaiotlab.github.io/CUHK-X/explorer/">Interactive Explorer ↗</a>
+    </nav>
+    <p class="project-challenge"><a href="https://openaiotlab.github.io/CUHK-X-Challenge/"><span aria-hidden="true">&#127937;</span> CUHK-X Challenge (Co-located with UbiComp/ISWC 2026) ↗</a></p>
+</section>
+
+<section aria-labelledby="related-publications">
+    <h2 id="related-publications">Related Publications</h2>
+
+    <article class="pub-card">
+        <h3 class="pub-title">A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning</h3>
+        <p class="pub-authors"><b>Siyang Jiang</b>, Mu Yuan, Xiang Ji, Bufang Yang, Zeyu Liu, Lilin Xu, Yang Li, Yuting He, Liran Dong, Wenrui Lu, Zhenyu Yan, Xiaofan Jiang, Wei Gao, Hongkai Chen, Guoliang Xing</p>
+        <p class="pub-venue">ACM MobiSys 2026</p>
+        <p class="pub-summary">Introduces the CUHK-X dataset and benchmarks for recognizing, understanding, and reasoning about human activities.</p>
+        <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209">PDF</a> |
+        <a href="https://github.com/openaiotlab/CUHK-X">Code</a> |
+        <a href="https://openaiotlab.github.io/CUHK-X/">Project Page</a>
+    </article>
+
+    <article class="pub-card">
+        <h3 class="pub-title">MACS — a Portable System for Multimodal Activity Recording with Built-In Annotation</h3>
+        <p class="pub-authors">Bohan Liu, <b>Siyang Jiang</b>, Mu Yuan, Hongkai Chen, Guoliang Xing</p>
+        <p class="pub-venue">ACM MobiSys 2026 Demo</p>
+        <p class="pub-summary">A portable system that synchronizes multimodal activity recordings and supports annotation during data collection.</p>
+        <a href="https://doi.org/10.1145/3812835.3814985">Paper</a>
+    </article>
+
+    <p class="project-publications-link"><a href="https://openaiotlab.github.io/CUHK-X/publications.html">Publications on the CUHK-X website ↗</a></p>
+</section>
+</main>
+
+<div id="footer"><div id="footer-text"></div></div>
+<p class="copyright">&copy; Siyang Jiang</p>
+
+</div>
+</body>
+</html>

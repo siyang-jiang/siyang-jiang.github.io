@@ -20,16 +20,17 @@ python3 -m http.server 8000      # then open http://localhost:8000
 
 ## Page architecture (the non-obvious parts)
 
-Five top-level pages share the same structure and must stay in sync:
+Six top-level pages share the same structure and must stay in sync:
 
 - `index.html` — biography, news feed
 - `publications.html` — publication list
 - `awards.html`, `services.html`, `teaching.html`
+- `projects.html` — CUHK-X overview, related publications, and links to the project resources
 
 Each page **duplicates** rather than shares:
 
 1. **Inline `<style>` blocks** at the top with typography rules (`h1/h2/h3`, `p/ul/ol/table`, `.smaller-image`) and the `.nav-menu` styling. This duplication is deliberate — there is no shared partial mechanism because Jekyll is off. When editing CSS, edit each page that needs the change, or move the rule into `jemdoc.css` (the shared stylesheet).
-2. **The `.nav-menu` block** linking to all five pages. The current page is marked with `class="active"`. Keep the list of links and their order identical across all five files.
+2. **The `.nav-menu` block** linking to all six pages, with Projects after Teaching. The current page is marked with `class="active"`. Keep the list of links and their order identical across all six files. Shared CSS supplies the vertical separators and keeps each link together when the navigation wraps.
 3. **Traffic counter** — `index.html` loads a ClustrMaps script; there is no Google Analytics on any page. If analytics is ever added, add it to every page at once.
 
 `jemdoc.css` is a modified jemdoc template and is the only stylesheet that is genuinely shared. Inline styles in each HTML file override it.
