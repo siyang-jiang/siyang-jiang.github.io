@@ -64,14 +64,61 @@
 		gap: 0.4em;
 		white-space: nowrap;
 	}
+	.publication-selection {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.6em;
+		white-space: nowrap;
+		cursor: pointer;
+	}
+	.publication-toggle {
+		position: relative;
+		width: 40px;
+		height: 24px;
+		flex-shrink: 0;
+	}
+	.publication-toggle input {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		opacity: 0;
+		cursor: pointer;
+		z-index: 1;
+	}
+	.publication-toggle-track {
+		position: absolute;
+		inset: 0;
+		border-radius: 999px;
+		background: #9ca3af;
+		transition: background-color 160ms ease;
+	}
+	.publication-toggle-track::before {
+		content: "";
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background: #fff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+		transition: transform 160ms ease;
+	}
+	.publication-toggle input:checked + .publication-toggle-track {
+		background: #007acc;
+	}
+	.publication-toggle input:checked + .publication-toggle-track::before {
+		transform: translateX(16px);
+	}
+	.publication-toggle input:focus-visible + .publication-toggle-track {
+		outline: 2px solid #007acc;
+		outline-offset: 3px;
+	}
 	.publication-views a {
 		font-weight: 400;
 		white-space: nowrap;
-	}
-	.publication-views a[aria-current="page"] {
-		color: #222;
-		font-weight: 700;
-		border-bottom: 2px solid #007acc;
 	}
 	.publication-views a:focus-visible {
 		outline: 2px solid #007acc;
@@ -86,11 +133,17 @@
 	}
 	@media (max-width: 480px) {
 		.publication-views {
-			font-size: 0.875em;
+			font-size: 1.05em;
 			gap: 0.3em;
 		}
 		.publication-view-option {
 			gap: 0.3em;
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.publication-toggle-track,
+		.publication-toggle-track::before {
+			transition: none;
 		}
 	}
 </style>
@@ -111,11 +164,13 @@
 </div>
 
 <h2 class="publication-views" aria-label="Publication views">
-	<a href="#selected" data-publication-view="selected" aria-controls="tbPublications" aria-current="page">Selected Papers</a>
-	<span class="publication-view-option">
-		<span class="publication-view-separator" aria-hidden="true">|</span>
-		<a href="#representative" data-publication-view="representative" aria-controls="tbPublications">First-author Papers</a>
-	</span>
+	<label class="publication-selection" for="first-author-toggle">
+		Selected Papers
+		<span class="publication-toggle">
+			<input id="first-author-toggle" type="checkbox" role="switch" aria-label="Show all first-author and co-first-author papers" aria-controls="tbPublications">
+			<span class="publication-toggle-track" aria-hidden="true"></span>
+		</span>
+	</label>
 	<span class="publication-view-option">
 		<span class="publication-view-separator" aria-hidden="true">|</span>
 		<a href="https://scholar.google.com/citations?user=8qJS75YAAAAJ&hl=en" aria-label="Full List on Google Scholar">Full List <span aria-hidden="true">↗</span></a>
