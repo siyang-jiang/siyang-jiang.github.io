@@ -3,7 +3,6 @@
   const body = table.tBodies[0];
   const papers = Array.from(body.rows);
   const links = document.querySelectorAll('[data-publication-view]');
-  const note = document.getElementById('publication-note');
 
   function updateView() {
     const representative = window.location.hash === '#representative';
@@ -28,9 +27,6 @@
     table.setAttribute('aria-label', representative
       ? 'First-author and co-first-author publications, newest first'
       : 'Selected papers');
-    note.textContent = representative
-      ? 'Including co-first-author papers. Newest first. * denotes equal contribution.'
-      : '* denotes equal contribution';
   }
 
   window.addEventListener('hashchange', updateView);
